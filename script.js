@@ -1,15 +1,11 @@
-const form = document.getElementById('contactForm');
-const button = document.getElementById('btn');
-const fullname = document.getElementById('name');
-const email = document.getElementById('email');
-const text = document.getElementById('massage');
+let name  = "rohit singh";
+let namecount  = [];
 
-form.addEventListener('submit', function(e) {
-     e.preventDefault();
-    form.reset(); // Clear all inputs
-    alert('Form submitted successfully!');
-});
+for (let i = 0; i < name.length; i++) {
+  if (name[i]) {
+    namecount.push(name[i]).join();
+   } 
+}
 
-button.addEventListener('click', function(e){
-    console.log(fullname.value,email.value,text.value);    
-})
+console.log(namecount);
+// console.log(m
