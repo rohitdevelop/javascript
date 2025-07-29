@@ -25,15 +25,11 @@
 //     return b;
 //   }
 
+//  what is the localstorage , sessionsstorage , cokkies
 
-let num = [1,2,3,4,5,6,7,8,9,10]
-
-for (let i = 1; i <= num.length; i++) {
- if (i % 2 === 0) {
-  console.log(i, "even");
-  
- }  else{
-  console.log( i , "odd");
-  
- }
-}
+// localstorage == is the storre a deta in browser jab hi delete hoga jab user delete karega
+localStorage.setItem("name", "rohit")
+// sessionsstorage == tab band deta khatam temperrorly store
+sessionsStorage.setItem("name", "rohit")
+// cookies == its save you deta called cookis properties and ye kam deta ya light deta in 4kd ke liye hota hai 
+document.cookie = 'rohti123@gmial.com'
