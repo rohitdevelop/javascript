@@ -40,16 +40,34 @@
 // what is the thie() key word and thire uses in js 
 
 // refer to anything 
-
-let num = [1,2,3,4,5,6,7,8,9,10]
-
-for (let i = 1; i <= num.length; i++) {
- setTimeout(() => {
-   if (i%2===0) {
-    console.log(i,'even');
-   }else{
-    console.log(i,'odd');
-   }
- },i * 1000);
-}
  
+ 
+//  const person = {
+//   name: "Rohit singh",
+//   greet: function () {
+//     console.log(`my name is ${this.name}`);
+//   },
+// };
+
+// person.greet(); // "Rohit"
+
+
+// event capturing and event bubbling
+ 
+//  document.getElementById("outer").addEventListener("click", function () {
+//         console.log("Outer DIV clicked");
+//       },true);
+
+//       document.getElementById("inner").addEventListener("click", function () {
+//         console.log("Inner DIV clicked");
+//       },true);
+
+ 
+// what is the "use strict" in js
+// x = 10; // ❌ This creates a global variable (even without let/var/const)
+// console.log(x); // 10
+
+
+"use strict";
+x = 10; // ❌ Error: x is not defined
+console.log(x);
