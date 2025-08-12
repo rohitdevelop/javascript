@@ -1,13 +1,15 @@
+ 
+
 //  lexical scope
 
 function outer() {
     console.log(name);
     function inner () {
         let name = "rohit singh"
-    }
- return inner
+    }    
+ return inner   
 
-}
+} 
 const naam  = outer()
 naam()
  
@@ -15,12 +17,11 @@ naam()
 let num = [1,2,3,4,5,6,7,8,9,10]
 for (let i = 1; i <= num.length; i++) {
  if (i%2===0) {
-    console.log(i,"even");
+    console.log(i,"even"); 
  } else {
-    console.log(i,"odd");
- }    
-}
-
+    console.log(i,"odd"); 
+ }       
+} 
 
 function count() {
     let mum = 1
