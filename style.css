@@ -8,4 +8,13 @@ body {
    background-color: #000;
    color:white
 }
+
+.box1{
+  width: 500px;
+  background: cyan;
+}
+.box2{
+  width: 500px;
+  background: gray;
+}
  

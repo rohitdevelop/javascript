@@ -1,39 +1,79 @@
-console.log("Hello, World!");
+let series = 0;
+let time = 0;
+let intervalId = null; // store setInterval reference
 
-// let ritikrun ={id:1,info: {name : "Ritik", total:0, balls: {type: "leather"}}};
-// let other = {...ritikrun};
-// other.info.balls.type = "tennis";
+let plus = document.querySelector('#inc');
+let minus = document.querySelector('#dic');
+let reset = document.querySelector('#reset');
+let start = document.querySelector('#start');
+let pause = document.querySelector('#pause');
 
-// console.log(ritikrun);//i want type: "leather"
-// console.log(other);//in that i want type: "tennis
+let count = document.querySelector('.num');
+let timer = document.querySelector('.timer');
 
-function outer() {
-    let foo = "bar";
- 
-  function inner () {
-    function deep() {
-        
-        console.log(foo);
-    }
-    deep()
+// Increment series
+plus.addEventListener('click', function () {
+  series++;
+  count.textContent = series;
+});
+
+// Decrement series
+minus.addEventListener('click', function () {
+  if (series > 0) { // avoid negative values
+    series--;
+    count.textContent = series;
   }
-  inner();
-}
+});
 
-outer();
+// Reset series and timer
+reset.addEventListener('click', function () {
+  series = 0;
+  time = 0;
+  clearInterval(intervalId);
+  intervalId = null;
+  count.textContent = series;
+  timer.textContent = time;
+});
+
+// Start timer
+start.addEventListener('click', function () {
+  if (intervalId === null) { // prevent multiple intervals
+    intervalId = setInterval(() => {
+      time++;
+      timer.textContent = time;
+    }, 1000);
+  }
+});
+
+// Pause timer
+pause.addEventListener('click', function () {
+  clearInterval(intervalId);
+  intervalId = null; // reset so you can start again
+});
 
 
-let fullname = "bhola"
 
-function reverse(str) {
- let reversed= "";
-    for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-    }
-    return reversed
-}
 
-console.log(reverse(fullname));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // import React from 'react';
