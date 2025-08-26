@@ -3,8 +3,8 @@ console.log({} + []);//  {object object}
 console.log([] + []);// {object}
 console.log({} + {});//  {object}
  
-let a = [1, 2, 3];
-let b = [1, 2, 3];
+var a = [1, 2, 3];
+var b = [1, 2, 3];
 console.log(a === b);//true
 console.log(a === b);//true
 console.log(a.toString() === b.toString());//true
