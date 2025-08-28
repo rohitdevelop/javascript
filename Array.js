@@ -1,14 +1,26 @@
 // 1. Find the second largest number in an array
-const numbers = [10, 5, 20, 8, 20, 15];
-const sortedNumbers = numbers.slice().sort((a, b) => b - a);
+// const numbers = [10, 5, 20, 8, 20, 15];
+// const sortedNumbers = numbers.slice().sort((a, b) => b - a);
 
-let secondLargest = null;
-for (let i = 1; i < sortedNumbers.length; i++) {
-    if (sortedNumbers[i] < sortedNumbers[0]) {
-        secondLargest = sortedNumbers[i];
-        break;
-    }
-}
+// let secondLargest = null;
+// for (let i = 1; i < sortedNumbers.length; i++) {
+//     if (sortedNumbers[i] < sortedNumbers[0]) {
+//         secondLargest = sortedNumbers[i];
+//         break;
+//     }
+// }
 
-console.log("Second largest number:", secondLargest); 
+// console.log("Second largest number:", secondLargest); 
  
+
+// largest number
+// const number = [24,54,6,5,2,4,5,]
+ 
+// let largest = Math.max(...number)
+// console.log(largest);
+
+
+// sum of all array
+// let num = [45,4,5,5,9,]
+// let sum = num.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum);
