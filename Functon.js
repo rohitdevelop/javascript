@@ -32,3 +32,32 @@
 // }
 // console.log(factorial(5));
 
+// type of functions are 
+// Function Declaration, Function Expression, Arrow Function, Anonymous Function, Immediately Invoked Function Expression (IIFE), Recursive Function, Higher-Order Function, Callback Function, Constructor Function, Generator Function.
+
+// What is the difference between a function declaration and a function expression in JavaScript?
+//Why does sum work before declaration but mul doesn’t?
+
+// console.log(sum(2,3)); // works
+// function sum(a, b) {
+//   return a + b;
+// }//beacuse in that proper function and when you call the function anywher it will works 
+
+// console.log(mul(2,3)); // ❌ error
+// const mul = function(a, b) {
+//   return a * b;
+// };// and in tise case ther is diclare as a value in the const variable that way error come before insialisation 
+
+// normal and arrowFunction
+// const obj = {
+//   value: 10,
+//   normalFunc: function() {
+//     console.log(this.value); 
+//   },//noraml function that can acces the global scop
+//   arrowFunc: () => {
+//     console.log(this.value); 
+//   }//and the arrow function not becuz or lexical scop 
+// };
+// obj.normalFunc(); // ?
+// obj.arrowFunc();  // ?
+// // why output are diffrent
