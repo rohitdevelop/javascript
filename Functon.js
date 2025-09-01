@@ -61,3 +61,15 @@
 // obj.normalFunc(); // ?
 // obj.arrowFunc();  // ?
 // // why output are diffrent
+
+// max number in function 
+function largest(num) {
+  let large = num[0];
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] > large) {
+      large = num[i];
+    }
+  }
+  return large;
+}
+console.log(largest([4, 55, 8, 75, 85, 65, 2]));

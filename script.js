@@ -85,3 +85,10 @@
 //   }
 // }
 
+  const button = document.getElementById('btn'); // ✅ use getElementById
+    const number = document.getElementById('count'); 
+
+    button.addEventListener('click', () => {
+      let currentValue = parseInt(number.textContent); // get current value
+      number.textContent = currentValue + 1; // increment
+    });
