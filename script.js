@@ -85,10 +85,18 @@
 //   }
 // }
 
-  const button = document.getElementById('btn'); // ✅ use getElementById
-    const number = document.getElementById('count'); 
+  // const button = document.getElementById('btn'); // ✅ use getElementById
+  //   const number = document.getElementById('count'); 
 
-    button.addEventListener('click', () => {
-      let currentValue = parseInt(number.textContent); // get current value
-      number.textContent = currentValue + 1; // increment
-    });
+  //   button.addEventListener('click', () => {
+  //     let currentValue = parseInt(number.textContent); // get current value
+  //     number.textContent = currentValue + 1; // increment
+  //   });
+
+
+  let date = new Date();
+let tarik = date.toISOString().split("T")[0]; // "2025-09-03"
+let reversed = tarik.split("-").reverse().join("-"); // "03-09-2025"
+console.log(reversed);
+
+  
