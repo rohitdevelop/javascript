@@ -94,9 +94,29 @@
   //   });
 
 
-  let date = new Date();
-let tarik = date.toISOString().split("T")[0]; // "2025-09-03"
-let reversed = tarik.split("-").reverse().join("-"); // "03-09-2025"
-console.log(reversed);
+//   let date = new Date();
+// let tarik = date.toISOString().split("T")[0]; // "2025-09-03"
+// let reversed = tarik.split("-").reverse().join("-"); // "03-09-2025"
+// console.log(reversed);
 
   
+    let count = 0;
+    const countElement = document.getElementById("count");
+    const incrementBtn = document.getElementById("increment");
+    const decrementBtn = document.getElementById("decrement");
+    const resetBtn = document.getElementById("reset");
+
+    incrementBtn.addEventListener("click", () => {
+      count++;
+      countElement.textContent = count;
+    });
+
+    decrementBtn.addEventListener("click", () => {
+      count--;
+      countElement.textContent = count;
+    });
+
+    resetBtn.addEventListener("click", () => {
+      count = 0;
+      countElement.textContent = count;
+    });

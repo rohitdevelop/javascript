@@ -1,20 +1,37 @@
-/* Apply box-sizing to all elements */
-* {
-  box-sizing: border-box;
  
-}
 
-body {
-   background-color: #000;
-   color:white
-}
-
-.box1{
-  width: 500px;
-  background: cyan;
-}
-.box2{
-  width: 500px;
-  background: gray;
-}
- 
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #000;
+    }
+    .counter-container {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #increment { background: #4CAF50; color: white; }
+    #decrement { background: #f44336; color: white; }
+    #reset { background: #2196F3; color: white; }
+    button:hover {
+      opacity: 0.8;
+    }

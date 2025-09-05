@@ -24,26 +24,26 @@
 // })
 
 
-try {
-    let name = 
-    console.log(name);
+// try {
+//     let name = 
+//     console.log(name);
     
-} catch (error) {
-    console.log(error,"erro aa gya mubarak ho");
+// } catch (error) {
+//     console.log(error,"erro aa gya mubarak ho");
     
-}
+// }
 
-function fetchData() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve("Data mil gaya ✅"), 2000);
-  });
-}
+// function fetchData() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("Data mil gaya ✅"), 2000);
+//   });
+// }
 
-async function getData() {
-  console.log("Fetching...");
-  let result = await fetchData(); // waits here
-  console.log(result);
-  console.log("Done ✅");
-}
+// async function getData() {
+//   console.log("Fetching...");
+//   let result = await fetchData(); // waits here
+//   console.log(result);
+//   console.log("Done ✅");
+// }
 
-getData();
+// getData();
