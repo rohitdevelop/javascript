@@ -100,23 +100,23 @@
 // console.log(reversed);
 
   
-    let count = 0;
-    const countElement = document.getElementById("count");
-    const incrementBtn = document.getElementById("increment");
-    const decrementBtn = document.getElementById("decrement");
-    const resetBtn = document.getElementById("reset");
+    // let count = 0;
+    // const countElement = document.getElementById("count");
+    // const incrementBtn = document.getElementById("increment");
+    // const decrementBtn = document.getElementById("decrement");
+    // const resetBtn = document.getElementById("reset");
 
-    incrementBtn.addEventListener("click", () => {
-      count++;
-      countElement.textContent = count;
-    });
+    // incrementBtn.addEventListener("click", () => {
+    //   count++;
+    //   countElement.textContent = count;
+    // });
 
-    decrementBtn.addEventListener("click", () => {
-      count--;
-      countElement.textContent = count;
-    });
+    // decrementBtn.addEventListener("click", () => {
+    //   count--;
+    //   countElement.textContent = count;
+    // });
 
-    resetBtn.addEventListener("click", () => {
-      count = 0;
-      countElement.textContent = count;
-    });
+    // resetBtn.addEventListener("click", () => {
+    //   count = 0;
+    //   countElement.textContent = count;
+    // });
