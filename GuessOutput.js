@@ -55,26 +55,26 @@
 // console.log(interview);
 
 
-console.log(0 == false);// true
-console.log(0 === false);// false
+// console.log(0 == false);// true
+// console.log(0 === false);// false
 
 
-let obj1 = { name: "Rohit", info:{age: 42}};
-let obj2 = obj1;
-obj2.info.age = 21;
+// let obj1 = { name: "Rohit", info:{age: 42}};
+// let obj2 = obj1;
+// obj2.info.age = 21;
 
-console.log(obj1.info.age);// chnaged 
+// console.log(obj1.info.age);// chnaged 
 
 
-function test() {
-  const x = 10;
-  if (true) {
-    const x = 20;
-    console.log(x);
-  }
-return x 
-}
-test();
+// function test() {
+//   const x = 10;
+//   if (true) {
+//     const x = 20;
+//     console.log(x);
+//   }
+// return x 
+// }
+// test();
 
 
 
