@@ -24,3 +24,18 @@
 // let num = [45,4,5,5,9,]
 // let sum = num.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 // console.log(sum);
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//  if (i % 2 === 0) {
+//     console.log("erven" , i);
+    
+// } else {
+//     console.log("odd" , i);
+    
+//  }    
+// }
+
+// let num  = [1,54,8,6,4,6,8,2,]
+// console.log(Math.floor(Math.random(num)));
