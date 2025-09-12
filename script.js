@@ -85,135 +85,155 @@
 //   }
 // }
 
-  // const button = document.getElementById('btn'); // ✅ use getElementById
-  //   const number = document.getElementById('count'); 
+// const button = document.getElementById('btn'); // ✅ use getElementById
+//   const number = document.getElementById('count');
 
-  //   button.addEventListener('click', () => {
-  //     let currentValue = parseInt(number.textContent); // get current value
-  //     number.textContent = currentValue + 1; // increment
-  //   });
-
+//   button.addEventListener('click', () => {
+//     let currentValue = parseInt(number.textContent); // get current value
+//     number.textContent = currentValue + 1; // increment
+//   });
 
 //   let date = new Date();
 // let tarik = date.toISOString().split("T")[0]; // "2025-09-03"
 // let reversed = tarik.split("-").reverse().join("-"); // "03-09-2025"
 // console.log(reversed);
 
-  
-    // let count = 0;
-    // const countElement = document.getElementById("count");
-    // const incrementBtn = document.getElementById("increment");
-    // const decrementBtn = document.getElementById("decrement");
-    // const resetBtn = document.getElementById("reset");
+// let count = 0;
+// const countElement = document.getElementById("count");
+// const incrementBtn = document.getElementById("increment");
+// const decrementBtn = document.getElementById("decrement");
+// const resetBtn = document.getElementById("reset");
 
-    // incrementBtn.addEventListener("click", () => {
-    //   count++;
-    //   countElement.textContent = count;
-    // });
+// incrementBtn.addEventListener("click", () => {
+//   count++;
+//   countElement.textContent = count;
+// });
 
-    // decrementBtn.addEventListener("click", () => {
-    //   count--;
-    //   countElement.textContent = count;
-    // });
+// decrementBtn.addEventListener("click", () => {
+//   count--;
+//   countElement.textContent = count;
+// });
 
-    // resetBtn.addEventListener("click", () => {
-    //   count = 0;
-    //   countElement.textContent = count;
-    // });
+// resetBtn.addEventListener("click", () => {
+//   count = 0;
+//   countElement.textContent = count;
+// });
 
+// let currentPlayer = 'X';
+//   let gameBoard = ['', '', '', '', '', '', '', '', ''];
+//   let gameActive = true;
 
+//   const winningCombinations = [
+//       [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+//       [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+//       [0, 4, 8], [2, 4, 6] // Diagonals
+//   ];
 
+//   const cells = document.querySelectorAll('.cell');
+//   const currentPlayerElement = document.getElementById('currentPlayer');
+//   const winnerMessageElement = document.getElementById('winnerMessage');
 
+//   // Add click event listeners to all cells
+//   cells.forEach(cell => {
+//       cell.addEventListener('click', handleCellClick);
+//   });
 
+//   function handleCellClick(e) {
+//       const cellIndex = e.target.getAttribute('data-index');
 
-      // let currentPlayer = 'X';
-      //   let gameBoard = ['', '', '', '', '', '', '', '', ''];
-      //   let gameActive = true;
+//       if (gameBoard[cellIndex] !== '' || !gameActive) {
+//           return;
+//       }
 
-      //   const winningCombinations = [
-      //       [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-      //       [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-      //       [0, 4, 8], [2, 4, 6] // Diagonals
-      //   ];
+//       makeMove(cellIndex, currentPlayer);
 
-      //   const cells = document.querySelectorAll('.cell');
-      //   const currentPlayerElement = document.getElementById('currentPlayer');
-      //   const winnerMessageElement = document.getElementById('winnerMessage');
+//       if (checkWinner()) {
+//           endGame(`Player ${currentPlayer} Wins! 🎉`);
+//           return;
+//       }
 
-      //   // Add click event listeners to all cells
-      //   cells.forEach(cell => {
-      //       cell.addEventListener('click', handleCellClick);
-      //   });
+//       if (checkDraw()) {
+//           endGame("It's a Draw! 🤝");
+//           return;
+//       }
 
-      //   function handleCellClick(e) {
-      //       const cellIndex = e.target.getAttribute('data-index');
-            
-      //       if (gameBoard[cellIndex] !== '' || !gameActive) {
-      //           return;
-      //       }
+//       switchPlayer();
+//   }
 
-      //       makeMove(cellIndex, currentPlayer);
-            
-      //       if (checkWinner()) {
-      //           endGame(`Player ${currentPlayer} Wins! 🎉`);
-      //           return;
-      //       }
-            
-      //       if (checkDraw()) {
-      //           endGame("It's a Draw! 🤝");
-      //           return;
-      //       }
-            
-      //       switchPlayer();
-      //   }
+//   function makeMove(index, player) {
+//       gameBoard[index] = player;
+//       const cell = cells[index];
+//       cell.textContent = player;
+//       cell.classList.add(player.toLowerCase());
+//       cell.disabled = true;
+//   }
 
-      //   function makeMove(index, player) {
-      //       gameBoard[index] = player;
-      //       const cell = cells[index];
-      //       cell.textContent = player;
-      //       cell.classList.add(player.toLowerCase());
-      //       cell.disabled = true;
-      //   }
+//   function switchPlayer() {
+//       currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+//       currentPlayerElement.textContent = currentPlayer;
+//   }
 
-      //   function switchPlayer() {
-      //       currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-      //       currentPlayerElement.textContent = currentPlayer;
-      //   }
+//   function checkWinner() {
+//       return winningCombinations.some(combination => {
+//           return combination.every(index => {
+//               return gameBoard[index] === currentPlayer;
+//           });
+//       });
+//   }
 
-      //   function checkWinner() {
-      //       return winningCombinations.some(combination => {
-      //           return combination.every(index => {
-      //               return gameBoard[index] === currentPlayer;
-      //           });
-      //       });
-      //   }
+//   function checkDraw() {
+//       return gameBoard.every(cell => cell !== '');
+//   }
 
-      //   function checkDraw() {
-      //       return gameBoard.every(cell => cell !== '');
-      //   }
+//   function endGame(message) {
+//       gameActive = false;
+//       winnerMessageElement.textContent = message;
+//       winnerMessageElement.classList.add('show');
 
-      //   function endGame(message) {
-      //       gameActive = false;
-      //       winnerMessageElement.textContent = message;
-      //       winnerMessageElement.classList.add('show');
-            
-      //       // Disable all remaining cells
-      //       cells.forEach(cell => {
-      //           cell.disabled = true;
-      //       });
-      //   }
+//       // Disable all remaining cells
+//       cells.forEach(cell => {
+//           cell.disabled = true;
+//       });
+//   }
 
-      //   function resetGame() {
-      //       currentPlayer = 'X';
-      //       gameBoard = ['', '', '', '', '', '', '', '', ''];
-      //       gameActive = true;
-            
-      //       currentPlayerElement.textContent = currentPlayer;
-      //       winnerMessageElement.classList.remove('show');
-            
-      //       cells.forEach(cell => {
-      //           cell.textContent = '';
-      //           cell.disabled = false;
-      //           cell.classList.remove('x', 'o');
-      //       });
-      //   }
+//   function resetGame() {
+//       currentPlayer = 'X';
+//       gameBoard = ['', '', '', '', '', '', '', '', ''];
+//       gameActive = true;
+
+//       currentPlayerElement.textContent = currentPlayer;
+//       winnerMessageElement.classList.remove('show');
+
+//       cells.forEach(cell => {
+//           cell.textContent = '';
+//           cell.disabled = false;
+//           cell.classList.remove('x', 'o');
+//       });
+//   }
+
+// let num = 1;
+// let counting = true;
+
+// const interval = setInterval(() => {
+//     if (counting && num <= 10) {
+//         console.log(num);
+//         num++;
+//     }
+// }, 1000); // Count every 100ms
+
+// // Stop after 2 seconds
+// setTimeout(() => {
+//     counting = false;
+//     clearInterval(interval);
+//     console.log("Stopped!");
+// }, 2000);
+
+// for (let i = 1; i <= 10; i++) {
+//   const timer = setTimeout(() => {
+//     console.log(i);
+//   }, 1000 * i);
+//   setTimeout(() => {
+//     clearInterval(timer);
+//     console.log("STOPED");
+//   }, 2000);
+// }
