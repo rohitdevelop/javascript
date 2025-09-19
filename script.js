@@ -237,3 +237,21 @@
 //     console.log("STOPED");
 //   }, 2000);
 // }
+
+// var a = [10, 11, 12, 13];
+// function print(b, ...a) {
+//   console.log(typeof(a));//
+// }
+// print(8, 9, 10, 11, 12);
+
+
+// let num = [5,4,8,7,12,10]
+
+// console.log(typeof num );
+
+// function hello() {}
+// console.log(typeof hello); // "function" (special case, but still an object)
+
+
+// let sum = true + true
+// console.log(sum);

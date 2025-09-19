@@ -63,13 +63,36 @@
 // // why output are diffrent
 
 // max number in function 
-function largest(num) {
-  let large = num[0];
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] > large) {
-      large = num[i];
-    }
-  }
-  return large;
+// function largest(num) {
+//   let large = num[0];
+//   for (let i = 0; i < num.length; i++) {
+//     if (num[i] > large) {
+//       large = num[i];
+//     }
+//   }
+//   return large;
+// }
+// console.log(largest([4, 55, 8, 75, 85, 65, 2]));
+
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+// function pexample() {
+//   let multi = num.map((n)=>n * 2)
+//   return multi;
+// }
+
+// console.log(pexample());
+
+
+const obj = {
+  a:1,
+  b:2,
+  c:3,
+  d:4,
 }
-console.log(largest([4, 55, 8, 75, 85, 65, 2]));
+
+Object.entries(obj).map(([key,value])=>{
+console.log(`${key} => ${value * 2}`);
+
+})
+// console.log(Object.entries(obj);
