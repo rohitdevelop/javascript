@@ -244,7 +244,6 @@
 // }
 // print(8, 9, 10, 11, 12);
 
-
 // let num = [5,4,8,7,12,10]
 
 // console.log(typeof num );
@@ -252,6 +251,65 @@
 // function hello() {}
 // console.log(typeof hello); // "function" (special case, but still an object)
 
-
 // let sum = true + true
 // console.log(sum);
+
+  function generateTable() {
+            const input = document.getElementById('numberInput');
+            const tableContainer = document.getElementById('tableContainer');
+            const tableBody = document.getElementById('tableBody');
+            const message = document.getElementById('message');
+            
+            const user = parseInt(input.value);
+            
+            // Clear previous message
+            message.innerHTML = '';
+            
+            // Validation
+            if (!user || isNaN(user)) {
+                message.innerHTML = '<div class="error-message">Please enter a valid number!</div>';
+                tableContainer.style.display = 'none';
+                return;
+            }
+            
+            if (user < 1 || user > 999) {
+                message.innerHTML = '<div class="error-message">Please enter a number between 1 and 999!</div>';
+                tableContainer.style.display = 'none';
+                return;
+            }
+            
+            // Clear previous table
+            tableBody.innerHTML = '';
+            
+            // Generate table rows
+            for (let i = 1; i <= 10; i++) {
+                const result = i * user;
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td><span class="number-highlight">${user}</span> × ${i}</td>
+                    <td class="result-highlight">${result}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            }
+            
+            // Show success message and table
+            message.innerHTML = `<div class="success-message">Multiplication table for ${user} generated successfully!</div>`;
+            tableContainer.style.display = 'block';
+            
+            // Smooth scroll to table
+            tableContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        // Allow Enter key to generate table
+        document.getElementById('numberInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                generateTable();
+            }
+        });
+        
+        // Focus on input when page loads
+        window.addEventListener('load', function() {
+            document.getElementById('numberInput').focus();
+        });
