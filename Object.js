@@ -45,3 +45,37 @@
 
 
 
+// let nums = [10, 5, 20, 1];
+// nums.large((a, b) => a + b);
+// console.log(nums); // [1, 5, 10, 20]
+
+
+
+// console.log(Object.entries(obj)); // [["a",1],["b",2],["c",3]]
+// let arr = [["x", 10], ["y", 20]];
+// console.log(Object.fromEntries(arr)); // {x:10, y:20}
+
+
+// let target = {a:1};
+// let source = {b:2, c:3};
+// Object.assign(target, source);
+// console.log(target); // {a:1, b:2, c:3}
+
+
+// let obj3 = {a:1};
+// Object.seal(obj3);
+// obj3.a = 99;     // ✅ allowed
+// obj3.b = 100;    // ❌ not allowed
+// console.log(obj3); // {a:99}
+
+
+// // we frea also
+
+// let num1 = [1,2,3,4,5]
+// let num2 = [6,7,8,9,10]
+
+// console.log(...num1 , ...num2);
+let num1 = [1,2,3,4,5]
+let num2 = [6,7,8,9,10]
+
+console.log(num1.concat(num2));
