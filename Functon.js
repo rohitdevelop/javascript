@@ -84,15 +84,26 @@
 // console.log(pexample());
 
 
-const obj = {
-  a:1,
-  b:2,
-  c:3,
-  d:4,
-}
+// const obj = {
+//   a:1,
+//   b:2,
+//   c:3,
+//   d:4,
+// }
 
-Object.entries(obj).map(([key,value])=>{
-console.log(`${key} => ${value * 2}`);
+// Object.entries(obj).map(([key,value])=>{
+// console.log(`${key} => ${value * 2}`);
 
-})
+// })
 // console.log(Object.entries(obj);
+
+
+// function sumnumder(rest) {
+//   let number = rest.reduce((a,v)=>{
+//     return a+v
+//   },0)
+//   return number
+// }
+
+// console.log(sumnumder([45,5,5,8,10,60]));
+
