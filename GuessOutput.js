@@ -78,3 +78,42 @@
 
 
 
+// lets go.............
+
+
+// for (var i = 1; i <= 3; i++) {
+//   setTimeout(() => console.log(i), 1000);
+// }
+// for (let  i = 1; i <= 3; i++) {
+//   setTimeout(() => console.log(i), 1000);
+// }
+ 
+
+
+// console.log(foo());//hello
+// function foo() { return "Hello"; }
+// console.log(bar());//error
+// let  bar = function() { return "World"; }
+
+// code 1
+const obj = {
+  a: 10,
+  arrow: () => console.log(this.a),
+  regular: function() { console.log(this.a); }
+};
+
+let fun = obj.arrow();// undefine
+let fun2 = obj.regular();// 10
+
+
+console.log(fun,fun2) ; // undefine
+
+
+// code 1
+console.log("Start");
+
+setTimeout(() => console.log("Timeout 1"), 0);
+Promise.resolve().then(() => console.log("Promise 1"));
+
+console.log("End");
+
