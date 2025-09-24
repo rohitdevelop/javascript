@@ -96,24 +96,24 @@
 // let  bar = function() { return "World"; }
 
 // code 1
-const obj = {
-  a: 10,
-  arrow: () => console.log(this.a),
-  regular: function() { console.log(this.a); }
-};
+// const obj = {
+//   a: 10,
+//   arrow: () => console.log(this.a),
+//   regular: function() { console.log(this.a); }
+// };
 
-let fun = obj.arrow();// undefine
-let fun2 = obj.regular();// 10
-
-
-console.log(fun,fun2) ; // undefine
+// let fun = obj.arrow();// undefine
+// let fun2 = obj.regular();// 10
 
 
-// code 1
-console.log("Start");
+// console.log(fun,fun2) ; // undefine
 
-setTimeout(() => console.log("Timeout 1"), 0);
-Promise.resolve().then(() => console.log("Promise 1"));
 
-console.log("End");
+// // code 1
+// console.log("Start");
+
+// setTimeout(() => console.log("Timeout 1"), 0);
+// Promise.resolve().then(() => console.log("Promise 1"));
+
+// console.log("End");
 
