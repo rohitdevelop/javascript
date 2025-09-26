@@ -107,3 +107,18 @@
 
 // console.log(sumnumder([45,5,5,8,10,60]));
 
+
+
+function factorial() {
+     let user = prompt("write a number to see factorial")
+    let result  = 1
+    for (let i  = 1; i  <= user; i++) {
+         
+         result *= i
+          
+    }
+    return result
+ }
+ console.log(factorial())
+
+
