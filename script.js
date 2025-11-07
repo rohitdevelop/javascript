@@ -313,3 +313,13 @@
 //         window.addEventListener('load', function() {
 //             document.getElementById('numberInput').focus();
 //         });
+
+
+
+//  let user  = prompt("text a number")
+
+// if (user <= 18) {
+//     log
+// } else {
+    
+}
