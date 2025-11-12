@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #000;
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+main section {
+  border-width: 2px;
+  border: white;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /*# sourceMappingURL=style.css.map */
+
+main section h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
