@@ -121,7 +121,7 @@
 // function ultimate(...num) {
 //  let sum = 0
 //   num.forEach( val => {
-//  sum += val    
+//  sum += val
 //   });
 //   return sum
 // }
@@ -131,8 +131,79 @@
 //   let fun = "rohit"
 //   return fun
 // }
-//  console.log(rohit ()); //rohit 
- 
+//  console.log(rohit ()); //rohit
 
+// function adds(...num) {
+//     return    num.reduce((acc, val) => {
+//     let sum = acc + val;
+//     return sum;
+//   },10);
+// }
 
-console.log(typeof());
+// console.log(adds(5,5,5));
+
+// let age = 20;
+// let info = "rohit singh";
+// function outerfunction() {
+//     function innerfunction() {
+//         console.log(info);
+//         let deeperfunction = () => {
+//             console.log(age);
+//         };
+//         deeperfunction();
+//     }
+//     innerfunction();
+// }
+
+// outerfunction();
+
+// 1
+// let frutes = ["banana", "mango", "pineapple", "apple", "lichi"];
+// function fruitsname( ) {
+// //  let add = frutes.push("puu")
+// //  console.log(frutes);
+// //  return add
+// let remove = frutes.shift()
+
+// return remove
+
+// }
+
+//  console.log(fruitsname());
+
+// 2
+
+// for (let i = 1; i < frutes.length; i++) {
+//     let frute =frutes[i]
+//    console.log("fal : ",frute);
+//   for (let j = 0; j < frute.length; j++) {
+// console.log(frute[j]);
+
+// }
+// console.log("---------");
+
+// }
+
+// let detailas = {
+//     name: "rohit",
+//     age : 20,
+//     city : "delhi"
+// }
+
+//  for (const i in detailas) {
+
+//     const element = detailas[i];
+
+//     console.log(element);
+
+//  }
+
+// for (let i = 1; i <= 10; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//     if (i === 10) {
+//       console.log("times is up");
+      
+//     }
+//   }, i * 1000);
+// }
