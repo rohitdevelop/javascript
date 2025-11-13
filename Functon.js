@@ -203,7 +203,99 @@
 //     console.log(i);
 //     if (i === 10) {
 //       console.log("times is up");
-      
+
 //     }
 //   }, i * 1000);
 // }
+
+// function runtwice(fun) {
+//      fun()
+//      fun()
+// }
+// runtwice(function twise() {
+//     console.log("hello");
+
+// })
+
+// function abs(a,b) {
+//     console.log(a+b);
+
+// }
+// abs(2,3)
+// abs(2,3)
+
+// let global = 0
+
+// function impure(a) {
+//     return global += a;
+// }
+// console.log(impure(1));// 1
+// console.log(impure(2));// 3
+// console.log(impure(3));// 6
+// console.log(impure(4));// 10
+
+// function abd({name , age}) {
+//     console.log(name , age);
+
+// }
+// abd({name:"rohit",age:20})
+
+// let obj = {
+//   name: "rohit",
+//   age: 20,
+
+//   fuc: function () {
+//     let greet =  () => {
+//     console.log(this);
+//   }
+//   greet()
+// }
+// };
+// // obj.greet();
+// obj.fuc();
+
+// function name(params) {
+
+//     console.log(this);
+// }
+
+// name()
+
+// const number = [1,2,3,4,5,6]
+
+// let square = number.map((e)=>e*e)
+
+// console.log(square);
+
+// let number = [1,23,54,8,6,8,5,6,5,65]
+
+// let evennumber = number.filter((e)=> e % 2 === 0 )
+
+// console.log(evennumber);
+
+// let salary = [100,200,300]
+
+// let totalsalary =  salary.reduce((acc,val)=>{
+// return acc + val
+// },0)
+// console.log(totalsalary);
+
+// let name =  ["harsh","khishi","rohit","aman","priya","parternas"]
+
+// let fun = name.every(function (val) {
+//     return val.length < 5
+// })
+
+// console.log(fun);
+
+// let user = {
+// name:"rohit",
+// age:20,
+// email:"rohit@120"
+// }
+// Object.freeze(user)//you cant add & change value
+// Object.seal(user)//you cant add but you change
+// user.age = 21
+// console.log(user);
+
+
