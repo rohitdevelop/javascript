@@ -299,3 +299,22 @@
 // console.log(user);
 
 
+// let salary1 = Number(prompt("enter your salary"))
+
+// let salary2 = Number(prompt("enter your salary"))
+// let salary3 = Number(prompt("enter your salary"))
+
+//  let salarise = [salary1,salary2, salary3]
+  
+
+// function add() {
+//   let sum = salarise.reduce((acc, val) => {
+//     return acc + val;
+//   }, 0);
+//   return sum;
+// }
+ 
+// console.log(add());
+
+
+ 
