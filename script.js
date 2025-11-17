@@ -331,3 +331,23 @@
 //   }
 // }
 //  coounting()
+
+
+let text =  "heloo"
+// let i = 0;
+// let output = "";
+
+// function typeLyrics() {
+//   if (i < text.length) {
+//     output += text[i];   // add character + space
+//     console.clear();
+//     console.log(output);       // re-print updated string
+//     i++;
+//     setTimeout(typeLyrics, 100); // speed
+//   }
+// }
+
+// typeLyrics();
+ 
+
+  
