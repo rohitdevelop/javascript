@@ -351,3 +351,9 @@ let text =  "heloo"
  
 
   
+
+let numbers = [1,2,2,5,8,8,6,5,10]// delete duplicate valuews
+
+let singlenums = numbers.filter( (val,index) => numbers.indexOf(val) === index ) 
+
+console.log(singlenums);// 2 6 kaise aya
