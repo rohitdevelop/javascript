@@ -79,3 +79,19 @@
 // let num2 = [6,7,8,9,10]
 
 // console.log(num1.concat(num2));
+
+//  function updateObject(obj, key, value) {
+//    obj[key] = value;
+
+//    return obj;
+// }
+
+// // Example usage
+// let person = { name: "Rohit", age: 20 };
+
+// console.log(updateObject(person, "age", 21));  
+// // Output: { name: "Rohit", age: 21 }
+
+// console.log(updateObject(person, "city", "Noida"));  
+// Output: { name: "Rohit", age: 21, city: "Noida" }
+

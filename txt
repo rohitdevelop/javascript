@@ -1,0 +1,8 @@
+1️⃣ Dynamic Object Modifier → Ek function banao jo kisi object me property update kare agar exist karti ho, aur agar nahi hai to add bhi kare.
+2️⃣ Word Reverser → Ek string ke har word ko reverse kar do, par word order same rehna chahiye.
+3️⃣ Array Chunker → Ek function jo array ko given size ke chunks me split kare, last chunk chhota ho sakta hai.
+4️⃣ Unique Character Counter → Ek string me kitne unique characters hai, wo count karo.
+5️⃣ Flatten Nested Array → Kisi bhi depth ka nested array ko flatten karke single-level array banao, flat() use na karo.
+6️⃣ Palindrome Filter → Ek array ke sirf palindrome strings return karo.
+7️⃣ Random Password Generator → Ek function jo random password generate kare jisme uppercase, lowercase aur numbers ho, aur length flexible ho.
+8️⃣ Object to Query String → Ek function jo object ko URL query string format me convert kare, jaise name=Rohit&age=20.
