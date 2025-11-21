@@ -1,12 +1,26 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
- </head>
- <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis tenetur itaque optio iusto, cupiditate eos corrupti ab, dolore temporibus, exercitationem quae pariatur unde nulla. Vel exercitationem repudiandae laudantium consequatur, maiores rerum ea libero magnam, corporis sit reiciendis reprehenderit, nisi aspernatur corrupti voluptate quibusdam ipsam?</p>
-  <script src="Object.js">  </script>
- </body>
- </html>
+  <title>Loader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <svg class="progress-ring" width="200" height="200">
+    <circle class="progress-ring__circle" stroke="green" stroke-width="10"
+            fill="transparent" r="90" cx="100" cy="100" />
+  </svg>
+
+  <div class="percent">0%</div>
+
+  <button id="downloadBtn">Download</button>
+
+</div>
+
+<script src="Dom.js"></script>
+</body>
+</html>
