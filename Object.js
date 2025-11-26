@@ -95,3 +95,10 @@
 // console.log(updateObject(person, "city", "Noida"));  
 // Output: { name: "Rohit", age: 21, city: "Noida" }
 
+let latter =  "Rohit";
+
+function reverse() {
+    let updated = latter.split('').reverse().join('')
+return updated
+}
+console.log(reverse());
