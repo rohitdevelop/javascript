@@ -4,40 +4,15 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial;
-  background: #f2f2f2;
+  background: #000;
 }
 
-.container {
-  text-align: center;
-  position: relative;
-}
+ 
 
-.progress-ring {
-  transform: rotate(-90deg);
-}
-
-.progress-ring__circle {
-  stroke-dasharray: 565;  /* 2πr => 2*3.14*90 */
-  stroke-dashoffset: 565; /* start empty */
-  transition: stroke-dashoffset 0.1s linear;
-}
-
-.percent {
-  position: absolute;
-  top: 75px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 32px;
-  font-weight: bold;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  font-size: 18px;
-  cursor: pointer;
-}
-button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+P{
+font-size: larger;
+color: red;
+background: rgb(150, 177, 150);
+padding: 10px;
+cursor: pointer;
 }

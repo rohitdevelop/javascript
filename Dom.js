@@ -1,28 +1,57 @@
-const circle = document.querySelector(".progress-ring__circle");
-const percentText = document.querySelector(".percent");
-const btn = document.getElementById("downloadBtn");
+// let para = document.querySelector("p");
+// let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
+// let text = para.innerText;
+// para.addEventListener("mouseenter", () => {
+//   const later = setInterval(() => {
+//     let str = text
+//       .split("")
+//       .map((e) => {
+//         return character.split("")[Math.floor(Math.random() * 53)];
+//       })
+//       .join();
 
-const radius = 90;
-const circumference = 2 * Math.PI * radius;
 
-circle.style.strokeDasharray = `${circumference}`;
-circle.style.strokeDashoffset = circumference;
 
-btn.addEventListener("click", () => {
-  let progress = 0;
-  btn.disabled = true; // disable button
+//     para.innerText = str;
+  
+//     console.log(str);
+//   }, 10);
 
-  let interval = setInterval(() => {
-    progress++;
-    percentText.textContent = progress + "%";
+//   setTimeout(() => {
+//     clearInterval(later);
+//    const ptag =  para.innerText = "WELCOME TO HAVEN BABY"
+//     if (ptag === character) {
+//           para.innerText = str;
 
-    const offset = circumference - (progress / 100) * circumference;
-    circle.style.strokeDashoffset = offset;
+//     }
+//   }, 300);
+// });
 
-    if (progress >= 100) {
-      clearInterval(interval);
-      btn.disabled = false; // enable again
+
+let para = document.querySelector("p");
+let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
+let text = para.innerText;
+
+para.addEventListener("mouseenter", () => {
+  let iteration = 0;
+  
+  const later = setInterval(() => {
+    let str = text
+      .split("")
+      .map((letter, index) => {
+        if (index < iteration) {
+          return text[index]; // Show correct letter
+        }
+        return character[Math.floor(Math.random() * character.length)]; // Random letter
+      })
+      .join(""); // Fixed: removed the comma, should be empty string
+
+    para.innerText = str;
+    
+    if (iteration >= text.length) {
+      clearInterval(later);
     }
-
-  }, 50); // loader speed
+    
+    iteration += 1 / 3; // Adjust speed of reveal
+  }, 30);
 });
