@@ -12,7 +12,6 @@ body {
 P{
 font-size: larger;
 color: red;
-background: rgb(150, 177, 150);
-padding: 10px;
+ padding: 10px;
 cursor: pointer;
 }

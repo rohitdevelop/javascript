@@ -31,27 +31,25 @@
 let para = document.querySelector("p");
 let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
 let text = para.innerText;
+let iteration = 0;
 
-para.addEventListener("mouseenter", () => {
-  let iteration = 0;
-  
-  const later = setInterval(() => {
+   function randomtext() {
+    
     let str = text
-      .split("")
-      .map((letter, index) => {
-        if (index < iteration) {
-          return text[index]; // Show correct letter
-        }
-        return character[Math.floor(Math.random() * character.length)]; // Random letter
-      })
-      .join(""); // Fixed: removed the comma, should be empty string
-
+    .split("")
+    .map((char, index) => {
+      if (index < iteration) {
+        return char; // Show correct letter
+      }
+      return character.split('')[Math.floor(Math.random() * 52)]; // Random letter
+    })
+    .join(""); // Fixed: removed the comma, should be empty string
+    
     para.innerText = str;
     
-    if (iteration >= text.length) {
-      clearInterval(later);
-    }
     
-    iteration += 1 / 3; // Adjust speed of reveal
-  }, 30);
-});
+    iteration += 0.2; 
+    
+  }
+  setInterval(randomtext,30)
+ 
