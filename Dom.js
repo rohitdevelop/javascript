@@ -53,3 +53,4 @@ let iteration = 0;
   }
   setInterval(randomtext,30)
  
+// map return a array but in foreach does not return anything thats the diffrece 
