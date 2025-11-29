@@ -30,44 +30,36 @@
 // let age = prompt("write a age");
 // let email = prompt("write a email");
 
-// console.log(`name: ${username} 
+// console.log(`name: ${username}
 //              userage: ${age}
 //              email:${email}`);
 
-
 //              if (age <= 18 ) {
 //                 console.log("pagal sale nikal");
-                
+
 //             } else {
 //                 console.log("pagal sale aaja");
-                
+
 //              }
-
-
 
 // let nums = [10, 5, 20, 1];
 // nums.large((a, b) => a + b);
 // console.log(nums); // [1, 5, 10, 20]
 
-
-
 // console.log(Object.entries(obj)); // [["a",1],["b",2],["c",3]]
 // let arr = [["x", 10], ["y", 20]];
 // console.log(Object.fromEntries(arr)); // {x:10, y:20}
-
 
 // let target = {a:1};
 // let source = {b:2, c:3};
 // Object.assign(target, source);
 // console.log(target); // {a:1, b:2, c:3}
 
-
 // let obj3 = {a:1};
 // Object.seal(obj3);
 // obj3.a = 99;     // ✅ allowed
 // obj3.b = 100;    // ❌ not allowed
 // console.log(obj3); // {a:99}
-
 
 // // we frea also
 
@@ -89,16 +81,23 @@
 // // Example usage
 // let person = { name: "Rohit", age: 20 };
 
-// console.log(updateObject(person, "age", 21));  
+// console.log(updateObject(person, "age", 21));
 // // Output: { name: "Rohit", age: 21 }
 
-// console.log(updateObject(person, "city", "Noida"));  
+// console.log(updateObject(person, "city", "Noida"));
 // Output: { name: "Rohit", age: 21, city: "Noida" }
 
-let latter =  "Rohit";
+// let latter =  "Rohit";
 
-function reverse() {
-    let updated = latter.split('').reverse().join('')
-return updated
-}
-console.log(reverse());
+// function reverse() {
+//     let updated = latter.split('').reverse().join('')
+// return updated
+// }
+// console.log(reverse());
+
+// let char = [1,2,5,3,4,8,9,9,4];
+
+// let repeated = char.filter((item, index)=>char.indexOf(item) !== index)
+
+// console.log(repeated);
+ 

@@ -28,29 +28,33 @@
 // });
 
 
-let para = document.querySelector("p");
-let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
-let text = para.innerText;
-let iteration = 0;
+// let para = document.querySelector("p");
+// let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
+// let text = para.innerText;
+// let iteration = 0;
 
-   function randomtext() {
+//    function randomtext() {
     
-    let str = text
-    .split("")
-    .map((char, index) => {
-      if (index < iteration) {
-        return char; // Show correct letter
-      }
-      return character.split('')[Math.floor(Math.random() * 52)]; // Random letter
-    })
-    .join(""); // Fixed: removed the comma, should be empty string
+//     let str = text
+//     .split("")
+//     .map((char, index) => {
+//       if (index < iteration) {
+//         return char; // Show correct letter
+//       }
+//       return character.split('')[Math.floor(Math.random() * 52)]; // Random letter
+//     })
+//     .join(""); // Fixed: removed the comma, should be empty string
     
-    para.innerText = str;
+//     para.innerText = str;
     
     
-    iteration += 0.2; 
+//     iteration += 0.2; 
     
-  }
-  setInterval(randomtext,30)
+//   }
+//   setInterval(randomtext,30)
  
 // map return a array but in foreach does not return anything thats the diffrece 
+
+
+
+
