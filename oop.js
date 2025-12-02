@@ -38,29 +38,39 @@
 // // greet(user1)
 // user1.greet()
 
+class person {
+  constructor(name, age) {
+    (this.name = name), (this.age = age);
+  }
+
+  greet() {
+    console.log(`name is ${this.name} age is ${(this.age)}`);
+  }
+}
+
+class student extends person {
+  constructor(name , age , cource, city) {
+      super(name, age);
+    (this.cource = cource), (this.city = city);
+  }
+
+  study() {
+    console.log(`my course is ${this.cource} my address is ${this.city}`);
+  }
+}
+
+const user1 = new person("rohit", 20);
+user1.greet();
+const student1 = new student("aman",20 , "bca", "noida");
+student1.greet()
+ student1.study();
+
 // class person {
-//   constructor(name, age) {
-//     (this.name = name), (this.age = age);
+//   constructor(name, age, address) {
+//     (this.name = name), (this.age = age), (this.address = address);
 //   }
 
-//   greet() {
-//     console.log(`name is ${this.name} age is ${(this.age)}`);
-//   }
 // }
 
-// class student extends person {
-//   constructor(name , age , cource, city) {
-//       super(name, age);
-//     (this.cource = cource), (this.city = city);
-//   }
-
-//   study() {
-//     console.log(`my course is ${this.cource} my address is ${this.city}`);
-//   }
-// }
-
-// const user1 = new person("rohit", 20);
-// user1.greet();
-// const student1 = new student("aman",20 , "bca", "noida");
-// student1.greet()
-//  student1.study();
+// let person1 = new person("rohit" , 20 , "delhi");
+// console.log(person1);
