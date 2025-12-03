@@ -6,3 +6,16 @@
 6️⃣ Palindrome Filter → Ek array ke sirf palindrome strings return karo.
 7️⃣ Random Password Generator → Ek function jo random password generate kare jisme uppercase, lowercase aur numbers ho, aur length flexible ho.
 8️⃣ Object to Query String → Ek function jo object ko URL query string format me convert kare, jaise name=Rohit&age=20.
+
+
+
+..............................................NOTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// Global mai this ki valau = > window
+// function mai this ki valau = > window
+// es5(mean normal function) function inside obj = object
+// es6(arrow function) function inside obj = window
+// es5 function inside es5 function inside obj = window
+// es6 function inside es5 function inside obj = object
+
+; call bind apply
