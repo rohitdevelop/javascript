@@ -140,11 +140,11 @@
 // console.log(objt.fun);
 
 
-let obj = {
-  name: "rohit",
-}
-function abdc() {
-  console.log(this);
+// let obj = {
+//   name: "rohit",
+// }
+// function abdc() {
+//   console.log(this);
   
-}
-abdc.call(obj)
+// }
+// abdc.call(obj)
