@@ -134,17 +134,54 @@
 // let objt = {
 //   fun: function () {
 //     console.log(this);
-    
+
 //   }
 // }
 // console.log(objt.fun);
-
 
 // let obj = {
 //   name: "rohit",
 // }
 // function abdc() {
 //   console.log(this);
-  
+
 // }
 // abdc.call(obj)
+
+// class animal {
+//   constructor() {
+//     this._age = 20;
+//   }
+//   set age(val) {
+//     if (val < 0) {
+//       console.log("something wring");
+//       return;
+//     } else {
+//       this._age = 20;
+//       return this._age;
+//     }
+//   }
+
+//   get age() {
+//     return this._age;
+//   }
+// }
+
+// let p1 = new animal();
+// console.log(p1);
+
+// p1.age = 37;
+// console.log(p1.age);
+
+
+
+let product = {
+    name: "shoes",
+    price: 10000,
+
+    discounted: function () {
+        return this.price - 200
+    }
+
+}
+console.log(product.discounted());
