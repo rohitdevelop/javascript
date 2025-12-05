@@ -175,13 +175,13 @@
 
 
 
-let product = {
-    name: "shoes",
-    price: 10000,
+// let product = {
+//     name: "shoes",
+//     price: 10000,
 
-    discounted: function () {
-        return this.price - 200
-    }
+//     discounted: function () {
+//         return this.price - 200
+//     }
 
-}
-console.log(product.discounted());
+// }
+// console.log(product.discounted());

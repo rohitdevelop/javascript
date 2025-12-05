@@ -45,3 +45,59 @@
 //     otp += num[ganarateotp]   
 // }
 // console.log(otp);
+
+// function calculateTriangleArea(a, b, c) {
+//     let s = (a + b + c) / 2; // Semi-perimeter
+//     return (Math.sqrt(s * (s - a) * (s - b) * (s - c))).toFixed(2); // Area calculation
+// }
+
+//  console.log(calculateTriangleArea(3,4,5));
+ 
+
+// function calculateCircleProperties(r) {
+//     let pi = Math.PI
+//     let circle1 = 2*pi*r
+//     let circle2 = pi*Math.pow((r),2)
+//     return {circle1 , circle2}
+
+// }
+// console.log(calculateCircleProperties(5.2));
+
+//  function even(num) {
+//     if (num % 2 == 0) {
+//         console.log("even",num);
+        
+//     }
+//  }
+//  even(5)
+
+// function calculateFinalAmount(amount) {
+//     if (amount >= 7001 && amount <= 9000) {
+//         return amount * 0.95;  // 5% discount
+//     } else if (amount >= 5001 && amount <= 7000) {
+//         return amount * 0.90;  // 10% discount
+//     } else {
+//         return amount; // no discount
+//     }
+// }
+
+// console.log(calculateFinalAmount(4000)); // 7600
+
+// function calculateElectricityBill(unit) {
+//  if (unit < 100) {
+//      let price = 4.2;
+//       return unit * price;
+//  }else if(unit >= 101 && unit <=200){
+//      let price = 6;
+//       return unit * price;
+//  }else if(unit >= 201 && unit <= 400){
+//      let price = 8
+//       return unit * price
+//  }else if(unit < 400){
+//      let price = 13
+//       return unit * price;
+//  }
+// }
+
+// console.log(calculateElectricityBill(300));
+
