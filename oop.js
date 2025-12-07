@@ -307,32 +307,32 @@
 //  showBrand.call(obj1)
 //  showBrand.call(obj2)
 
-function greet( ) {
-  console.log(this.name);
-}
+// function greet( ) {
+//   console.log(this.name);
+// }
 
-let user = { name: "Rohit" ,};
+// let user = { name: "Rohit" ,};
 
-greet(user); 
-// Output: Hello Rohit
+// greet(user); 
+// // Output: Hello Rohit
 
-function add(a, b, c) {
-  console.log(this.label, a + b + c);
-}
+// function add(a, b, c) {
+//   console.log(this.label, a + b + c);
+// }
 
-let obj = { label: "Total:" };
+// let obj = { label: "Total:" };
 
-add.apply(obj, [10, 20, 30]); 
-// Output: Total: 60
+// add.apply(obj, [10, 20, 30]); 
+// // Output: Total: 60
 
 
-function show() {
-  console.log("Brand:", this.brand);
-}
+// function show() {
+//   console.log("Brand:", this.brand);
+// }
 
-let mobile = { brand: "Samsung" };
+// let mobile = { brand: "Samsung" };
 
-let newFn = show.bind(mobile);
+// let newFn = show.bind(mobile);
 
-newFn(); 
+// newFn(); 
 // Output: Brand: Samsung

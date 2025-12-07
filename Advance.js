@@ -47,3 +47,18 @@
 // }
 
 // getData();
+
+// function abc(fun) {
+//     fun(function (fun3) {
+//         fun3(function () {
+            
+//         })
+//     });
+// }
+
+// abc(function (fun2) {
+//     fun2(function (fun4) {
+//         console.log("hello");
+//         fun4()
+//     })
+// })
