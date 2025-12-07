@@ -18,4 +18,65 @@
 // es5 function inside es5 function inside obj = window
 // es6 function inside es5 function inside obj = object
 
-; call bind apply
+
+JavaScript mein this ka behaviour call ke tarike par depend karta hai.
+🟦 Global scope mein this hamesha 🟩 window ko point karta hai, aur 🟦 normal ES5 function ko agar directly call karo toh usme bhi this = 🟩 window hota hai.
+Lekin jab 🟧 ES5 function object ke andar method ke form me likha ho, aur aap usse obj.method() ke saath call karte ho, tab this us 🟩 object ko point karta hai.
+Wahin 🟪 arrow function (ES6) ka apna koi this nahi hota, isliye object ke andar arrow method likhne par bhi this hamesha 🟩 window hota hai.
+Agar aap 🟧 object → ES5 function → ES5 function ka deep nested structure banate ho, toh inner ES5 function ka this phir se 🟥 window ho jata hai, kyunki call ke time woh object se bind nahi hota.
+Lekin agar structure 🟧 object → ES5 function → 🟪 arrow function ka ho, toh arrow function apne outer ES5 function ka this inherit karta hai, isliye woh 🟩 object ko hi point karta hai.
+💡 Simple rule: Arrow functions = parent ka this ES5 methods = jis object se call hua uska this normal functions when loosely called = window.
+
+
+
+.......................................this defination................
+
+✔ Inside normal function (non-strict mode)
+
+Browser:
+
+function test() {
+  console.log(this); // window
+}
+test();
+
+
+Node.js:
+
+function test() {
+  console.log(this); // global object (but NOT {})
+}
+test();
+
+Browser me this = window, Node.js me this = {} (global scope me).
+
+
+
+..................................call,apply,bind......................
+call() kisi function ko turant execute karta hai aur this ko manually set karta hai.
+Arguments comma-separated diye jate hain.
+
+Example:
+
+show.call(obj, a, b, c);
+
+
+
+Definition:
+apply() bhi function ko turant execute karta hai aur this set karta hai,
+but arguments array ke form me deta hai.
+
+Example:
+
+show.apply(obj, [a, b, c]);
+
+
+
+Definition:
+bind() function ko turant execute nahi karta,
+yeh ek new function return karta hai jisme this permanently set hota hai.
+
+Example:
+
+let newFn = show.bind(obj);
+newFn(); // call later

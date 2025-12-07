@@ -185,3 +185,154 @@
 
 // }
 // console.log(product.discounted());
+
+
+// let Laptop = {
+//     brand: "Omen",
+//     price: 30000,
+//     welcome: ()=>{
+//    return "Laptop started";
+   
+//     },
+//     priceupdate: ()=>{
+//    return this.price = 40000;
+   
+//     }
+// }
+
+// console.log(Laptop.price);
+
+// class Laptop {
+//     constructor(brand,price){
+//         this.brand = brand;
+//         this.price = price;
+//     }
+//     welcome(){
+//         return "laptop starated";
+        
+//     }
+//     priceupdate(){
+//         return this.price + 1000
+//     }
+// }
+
+
+// let product = new Laptop("omen", 30000)
+// console.log(product.priceupdate());
+
+
+
+// let Employee1 = {
+//     name: "rohti",
+//     salary : 15000,
+//     Showdetals: ()=>{
+//         return `the name of employe is ${this.name}and salary is ${this.salary}`
+//     }
+// }
+// let Employee2 = {
+//     name: "rohti",
+//     salary : 15000,
+//     Showdetals: ()=>{
+//         return `the name of employe is ${this.name}and salary is ${this.salary}`
+//     }
+// }
+// let Employee3 = {
+//     name: "rohti",
+//     salary : 15000,
+//     Showdetals: ()=>{
+//         return `the name of employe is ${this.name}and salary is ${this.salary}`
+//     }
+// }
+
+
+// class BankAccount {
+//     constructor(name, balance) {
+//         this.name = name
+//         this.balance = balance
+//     }
+//     amount() {
+//         return this.balance+1
+//     }
+
+// }
+
+// let user = new BankAccount("rohit",400)
+
+
+// ..............................1........................
+// let objprofile ={
+//     username: "rohit singh",
+//     printname (){
+//         console.log(this.username);
+//     }
+// }
+// objprofile.printname();
+
+// // ..............................2........................
+// class claaprofile {
+//     constructor(name) {
+//         this.name = name
+//      }
+//     printname() {
+//     console.log(this.name)
+//     }
+// }
+//     let user = new claaprofile("rohit")
+//     user.printname();
+
+
+// function Vehicle(type, wheels) {
+//   this.type = type;
+//   this.wheels = wheels;
+// }
+
+// // Method added on PROTOTYPE (Recommended)
+// Vehicle.prototype.describe = function () {
+//   console.log(`This is a ${this.type} with ${this.wheels} wheels.`);
+// };
+
+// let car = new Vehicle("Car", 4);
+// let bike = new Vehicle("Bike", 2);
+
+// console.log(car);
+// bike.describe();
+
+
+// let obj1 = { brand: "Apple" };
+// let obj2 = { brand: "Samsung" };
+// function showBrand() {
+//   console.log(this.brand);
+// }
+
+//  showBrand.call(obj1)
+//  showBrand.call(obj2)
+
+function greet( ) {
+  console.log(this.name);
+}
+
+let user = { name: "Rohit" ,};
+
+greet(user); 
+// Output: Hello Rohit
+
+function add(a, b, c) {
+  console.log(this.label, a + b + c);
+}
+
+let obj = { label: "Total:" };
+
+add.apply(obj, [10, 20, 30]); 
+// Output: Total: 60
+
+
+function show() {
+  console.log("Brand:", this.brand);
+}
+
+let mobile = { brand: "Samsung" };
+
+let newFn = show.bind(mobile);
+
+newFn(); 
+// Output: Brand: Samsung

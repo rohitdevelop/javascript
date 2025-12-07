@@ -100,4 +100,4 @@
 // }
 
 // console.log(calculateElectricityBill(300));
-
+ 
