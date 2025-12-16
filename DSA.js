@@ -2,7 +2,6 @@
 //     return a + b
 // }
 
-
 // const total = sum(5,5)
 // console.log(total)
 
@@ -15,13 +14,12 @@
 // function swapNumbers(a, b) {
 // return [a,b]
 
-
 // }
 // let swap = swapNumbers(10,20)
 // console.log(swap.reverse());
 
 // function calculateCompoundInterest(p, r, t, n) {
- 
+
 //     return `A = ${p*(1+r/n)**(n*t)}`
 // }
 
@@ -42,7 +40,7 @@
 
 // for (let i = 0; i < 4; i++) {
 //     let ganarateotp = num[Math.floor(Math.random() * num.length)]
-//     otp += num[ganarateotp]   
+//     otp += num[ganarateotp]
 // }
 // console.log(otp);
 
@@ -52,7 +50,6 @@
 // }
 
 //  console.log(calculateTriangleArea(3,4,5));
- 
 
 // function calculateCircleProperties(r) {
 //     let pi = Math.PI
@@ -66,7 +63,7 @@
 //  function even(num) {
 //     if (num % 2 == 0) {
 //         console.log("even",num);
-        
+
 //     }
 //  }
 //  even(5)
@@ -100,4 +97,66 @@
 // }
 
 // console.log(calculateElectricityBill(300));
+
+// function fingreatnum(a ,b ,c) {
+//     return Math.max(a,b,c)
+// }
+
+// console.log(fingreatnum(5,4,8))
+
+// function maxnumber(a, b, c) {
+//   if (a <= b && c <= b) {
+//     return b;
+//   } else if (b <= a && c <= a) {
+//     return a;
+//   } else if (a <= c && b <= c) {
+//     return c;
+//   }
+// }
+// console.log(maxnumber(600, 450, 850));
+
+
+// class dayname {
+//     constructor(num) {
+//      if (num === 1) {
+//             console.log("Monday");
+//         } else if (num === 2) {
+//             console.log("Tuesday");
+//         } else if (num === 3) {
+//             console.log("Wednesday");
+//         } else if (num === 4) {
+//             console.log("Thursday");
+//         } else if (num === 5) {
+//             console.log("Friday");
+//         } else if (num === 6) {
+//             console.log("Saturday");
+//         } else if (num === 7) {
+//             console.log("Sunday");
+//         } else {
+//             console.log("Invalid day number");
+//         }
+//     }
  
+
+// }
+// let week = new dayname(5)
+// console.log(week);
+
+
+
+
+class Solution {
+    get_movie_status(ratingStr) {
+ const movie = ratingStr(0.0 <= 5.0)
+ 
+ if (movie >= 2.0) {
+     console.log("flop");
+ }else if(2.0 >= 3.4){
+     console.log("semi-hit");
+     }else if(3.5 >= 4.5){
+         console.log("hit");
+     }else if(4.6 >= 5.0){
+         console.log("super hit")
+     }
+}
+}

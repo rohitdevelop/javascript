@@ -147,20 +147,22 @@
 // ...........................trottling......................................
 
 
-function trottling(fun , dealy) {
-    let last = 0;
-    return function () {
-    const now = Date.now();
-    if (now - last >= dealy) {
-        last = now;
-    fun();
-    }
+// function trottling(fun , dealy) {
+//     let last = 0;
+//     return function () {
+//     const now = Date.now();
+//     if (now - last >= dealy) {
+//         last = now;
+//     fun();
+//     }
      
-    }
-}
+//     }
+// }
 
-window.addEventListener('mousemove',trottling(function (e) {
- console.log("hello");
+// window.addEventListener('mousemove',trottling(function (e) {
+//  console.log("hello");
     
-},2000)
-)
+// },2000)
+// )
+ 
+ 
