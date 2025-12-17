@@ -145,18 +145,37 @@
 
 
 
-class Solution {
-    get_movie_status(ratingStr) {
- const movie = ratingStr(0.0 <= 5.0)
+// class Solution {
+//     get_movie_status(ratingStr) {
+//  const movie = ratingStr(0.0 <= 5.0)
  
- if (movie >= 2.0) {
-     console.log("flop");
- }else if(2.0 >= 3.4){
-     console.log("semi-hit");
-     }else if(3.5 >= 4.5){
-         console.log("hit");
-     }else if(4.6 >= 5.0){
-         console.log("super hit")
-     }
-}
-}
+//  if (movie >= 2.0) {
+//      console.log("flop");
+//  }else if(2.0 >= 3.4){
+//      console.log("semi-hit");
+//      }else if(3.5 >= 4.5){
+//          console.log("hit");
+//      }else if(4.6 >= 5.0){
+//          console.log("super hit")
+//      }
+// }
+// }
+
+
+// function findLargest(arr) {
+//  const max = arr[0]
+//  for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] > max){
+//       max  = arr[i]
+//     }
+// }
+
+// return max
+// }
+
+// console.log(findLargest([3, 7, 1, 9, 4]));
+
+
+var age = 5
+age = 6
+console.log(age);
