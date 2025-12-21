@@ -115,7 +115,6 @@
 // }
 // console.log(maxnumber(600, 450, 850));
 
-
 // class dayname {
 //     constructor(num) {
 //      if (num === 1) {
@@ -136,19 +135,15 @@
 //             console.log("Invalid day number");
 //         }
 //     }
- 
 
 // }
 // let week = new dayname(5)
 // console.log(week);
 
-
-
-
 // class Solution {
 //     get_movie_status(ratingStr) {
 //  const movie = ratingStr(0.0 <= 5.0)
- 
+
 //  if (movie >= 2.0) {
 //      console.log("flop");
 //  }else if(2.0 >= 3.4){
@@ -160,7 +155,6 @@
 //      }
 // }
 // }
-
 
 // function findLargest(arr) {
 //  const max = arr[0]
@@ -175,7 +169,61 @@
 
 // console.log(findLargest([3, 7, 1, 9, 4]));
 
+// var age = 5
+// age = 6
+// console.log(age);
 
-var age = 5
-age = 6
-console.log(age);
+// function arrau(n) {
+//    for (let i = n; i >= 1; i--) {
+// console.log(i);
+// process.std.write(i+'')
+//   }
+
+// }
+
+//  arrau(10)
+
+// function factorial(n) {
+//   let sum = 1
+//   for (let i = 1; i <= n; i++) {
+//     sum = sum * i
+//    }
+//   return sum
+// }
+
+//  console.log(factorial(5));
+
+// function numbertable(n) {
+//   let fact = []
+//   for (let i = 1; i <= n; i++) {
+//      if (n%i===0) {
+//       fact.push(i)
+//      }
+//     }
+//     return fact.join(" ")
+// }
+
+// console.log(numbertable(5))
+
+// function sumevenodd(start, end) {
+//   let even = 0
+//   let odd = 0
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//           even = even + i
+//         } else {
+//           odd = odd + i
+//      }
+//   }
+//   return [even,odd]
+// }
+// console.log(sumevenodd(1, 5));
+
+
+// .............................count=⌊320−2​⌋+1=⌊318​⌋+1=6+1=7..........................
+// let count = 0
+// for (let i = 2; i <= 20; i += 3) {
+//      count++
+// }
+
+// console.log(count);
