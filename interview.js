@@ -62,3 +62,40 @@ abc()
 
 // let fund = numbers.reduce((pre, curr )=> pre + curr, 1)
 // console.log(fund); //only one number
+
+// 🔹.................................... Deep Comparison
+
+// 👉 Deep comparison objects ke andar ke values ko bhi compare karta hai.
+
+
+
+// 🔹................................ Shallow Comparison
+
+// 👉 Shallow comparison sirf reference (memory address) check karta hai, andar ke data ko nahi.
+// let a = { name: "Rohit" };
+// let b = { name: "Rohiit" };
+// // let b = { num : 45};
+
+// console.log(JSON.stringify(a)); // true
+
+// console.log(![]);
+
+// if ( null) {
+//     console.log("present");
+    
+// } else {
+//     console.log("absent");
+    
+// }
+
+
+// let str = "rohit"
+
+// let reverse = ''
+//  for (let i = 5; i < str.length; i--) {
+//    reverse =  reverse + str[i] 
+//  }
+
+// console.log(reverse);
+
+ 
