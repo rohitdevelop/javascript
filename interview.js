@@ -98,4 +98,38 @@ abc()
 
 // console.log(reverse);
 
- 
+
+
+// a=2;
+// console.log(a);
+// var a = 2;
+
+// console.log( typeof(null));
+
+
+
+// const a = {}
+// a.key = "akash"
+// const b = a
+
+// b.key = "sum" 
+// console.log(a);  
+
+
+// let a = {}
+// a.key = "akash"
+// let b = {...a}
+
+// b.key = "sum" 
+// console.log(a.key);  
+
+
+let num = [1,23,45,6,4,6,10]
+
+let result = num.find((val)=> {
+    if (val > 10) {
+         return val
+    }
+})
+
+console.log(result);

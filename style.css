@@ -1,17 +1,11 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial;
-  background: #000;
-}
-
- 
-
-P{
-font-size: larger;
-color: red;
- padding: 10px;
-cursor: pointer;
+ p{
+   /* display: none;
+  visibility: hidden; */
+  border: 5px solid aqua;
+ /* border-color: aqua; */
+width: 20%;
+height: 20%;
+outline: 5px solid black;
+text-decoration: underline;
+/* outline-color: black; */
 }
