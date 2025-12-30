@@ -133,3 +133,11 @@ let result = num.find((val)=> {
 })
 
 console.log(result);
+
+
+
+const kjbhl = 45
+ kjbhl = 5
+// var kjbhl = 45
+
+console.log(kjbhl);
