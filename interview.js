@@ -124,20 +124,20 @@ abc()
 // console.log(a.key);  
 
 
-let num = [1,23,45,6,4,6,10]
+// let num = [1,23,45,6,4,6,10]
 
-let result = num.find((val)=> {
-    if (val > 10) {
-         return val
-    }
-})
+// let result = num.find((val)=> {
+//     if (val > 10) {
+//          return val
+//     }
+// })
 
-console.log(result);
+// console.log(result);
 
 
 
-const kjbhl = 45
- kjbhl = 5
-// var kjbhl = 45
+// const kjbhl = 45
+//  kjbhl = 5
+// // var kjbhl = 45
 
-console.log(kjbhl);
+// console.log(kjbhl);
