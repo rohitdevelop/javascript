@@ -125,3 +125,25 @@
 // console.log(str);
 
 // }
+
+
+// function abc(a,b) {
+//     if (b>a) {
+//         console.log("b is large");
+//     }else{
+//         console.log("a is large");
+//     }
+//     return a+b;
+// }
+
+// console.log(abc(4,1));// a is large
+// // 5
+// console.log(abc(1,4));// b is large
+// // 5
+
+// function abc(a, c, ...b) {
+//     return [ ...b,...a, c];
+// }
+
+// console.log(abc([1,2], 3, 4));
+

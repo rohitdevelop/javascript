@@ -141,3 +141,33 @@ abc()
 // // var kjbhl = 45
 
 // console.log(kjbhl);
+ 
+// let num = 2
+
+// switch (num) {
+//     case 1:
+//         console.log("hello one");
+        
+//         break;
+//     case 2:
+//         console.log("hello tow");
+        
+//         break;
+//     case 3:
+//         console.log("hello three");
+        
+//         break;
+//     case 4:
+//         console.log("hello four");
+        
+//         break;
+//     case 5:
+//         console.log("hello five");
+        
+//         break;
+//     default:
+//         break;
+// }
+
+
+
