@@ -147,3 +147,34 @@
 
 // console.log(abc([1,2], 3, 4));
 
+//  function abc( ) {
+//      console.log( 100 +200)
+//  }
+
+//  var abc
+//  console.log(abc());
+ 
+//  var a = "10"
+//  var b = "hello"
+//  var a = 10
+ 
+// console.log(a+b);
+
+
+// console.log(typeof typeof 10);
+
+
+// let num = parseInt("54.5",1)
+// console.log(num);
+
+
+// console.log(parseInt("A1000"));
+// console.log(parseInt("1000A"));
+
+
+//  console.log([100,200,300].map((elem)=>{
+//      if(elem > 90){
+//           elem + 10
+//         return elem + 10
+//     } 
+//  }))
