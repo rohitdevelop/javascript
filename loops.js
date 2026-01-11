@@ -24,7 +24,28 @@
 
 // console.log(numprime(10));
 
-let num = 10
-for (let i = 0; i < num; i++) {
+// let num = 10
+// for (let i = 0; i < num; i++) {
      
+// }
+// let i = 3
+// do
+// i++,  
+//   console.log(i);
+// while (i<5);
+
+
+let num = [1,2,3,4,5,6,7,8]
+let a = 45
+for (const i of num) {
+    console.log(i);
+    
 }
+
+// for (const key in object) {
+//     if (!Object.hasOwn(object, key)) continue;
+    
+//     const element = object[key];
+    
+    
+// }
