@@ -14,10 +14,10 @@
 //   for (let i = 0; i < n; i++) {
 //     if (i % 2 === 0) {
 //         console.log(i,'its even');
-        
+
 //     } else {
 //         console.log(i, 'not even');
-        
+
 //     }
 //   }
 // }
@@ -26,31 +26,27 @@
 
 // let num = 10
 // for (let i = 0; i < num; i++) {
-     
+
 // }
 // let i = 3
 // do
-// i++,  
+// i++,
 //   console.log(i);
 // while (i<5);
-
 
 // let num = [1,2,3,4,5,6,7,8]
 // let a = 45
 // for (const i of num) {
 //     console.log(i);
-    
+
 // }
 
 // for (const key in object) {
 //     if (!Object.hasOwn(object, key)) continue;
-    
+
 //     const element = object[key];
-    
-    
+
 // }
-
-
 
 // let num = 2001546
 // let rev = 0
@@ -58,11 +54,35 @@
 // let last  = num % 10
 
 // rev = rev * 10 + last
-// num = Math.floor(num/10)    
+// num = Math.floor(num/10)
 // }
 // console.log(rev);
 
-
-
 // console.log({});
 
+
+
+// let isbn = "4578546925";
+
+// for (let i = 1; i <= isbn.length; i++) {
+//   let result = Number(isbn[i]) * 1;
+//   console.log(result);
+// }
+
+let isbn = "4578546925";
+let sum = 0;
+let i = 0;
+
+while (i < isbn.length) {
+  let digit = Number(isbn[i]);
+  sum += digit * (i + 1);
+  i++;
+}
+
+console.log("Total Sum:", sum);
+
+if (sum % 11 === 0) {
+  console.log("✅ Valid ISBN");
+} else {
+  console.log("❌ Invalid ISBN");
+}
