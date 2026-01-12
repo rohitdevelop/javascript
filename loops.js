@@ -35,12 +35,12 @@
 // while (i<5);
 
 
-let num = [1,2,3,4,5,6,7,8]
-let a = 45
-for (const i of num) {
-    console.log(i);
+// let num = [1,2,3,4,5,6,7,8]
+// let a = 45
+// for (const i of num) {
+//     console.log(i);
     
-}
+// }
 
 // for (const key in object) {
 //     if (!Object.hasOwn(object, key)) continue;
@@ -49,3 +49,20 @@ for (const i of num) {
     
     
 // }
+
+
+
+// let num = 2001546
+// let rev = 0
+// while (num > 0) {
+// let last  = num % 10
+
+// rev = rev * 10 + last
+// num = Math.floor(num/10)    
+// }
+// console.log(rev);
+
+
+
+// console.log({});
+
