@@ -56,5 +56,7 @@
 // map return a array but in foreach does not return anything thats the diffrece 
 
 
+console.log("hello kaise ho");
+
 
 
