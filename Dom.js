@@ -54,10 +54,22 @@
 //   setInterval(randomtext,30)
  
 // map return a array but in foreach does not return anything thats the diffrece 
+ 
 
 
-console.log("hello kaise ho");
-console.log("hello kaise ho");
+ class persone {
+    constructor(){
+        this.name = "rohit"
+        this .age = 45
+    }
 
+    greet (){
+        console.log(`my nmae is ${this.name} and i am ${this.age} old`);
+        
+    }
+ }
 
+ let create = new persone()
 
+ console.log(create);
+ 
