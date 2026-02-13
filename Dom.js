@@ -57,19 +57,29 @@
  
 
 
- class persone {
-    constructor(){
-        this.name = "rohit"
-        this .age = 45
-    }
+//  class persone {
+//     constructor(){
+//         this.name = "rohit"
+//         this .age = 45
+//     }
 
-    greet (){
-        console.log(`my nmae is ${this.name} and i am ${this.age} old`);
+//     greet (){
+//         console.log(`my nmae is ${this.name} and i am ${this.age} old`);
         
-    }
- }
+//     }
+//  }
 
- let create = new persone()
+//  let create = new persone()
 
- console.log(create.greet());
+//  console.log(create.greet());
  
+
+
+// let user = prompt("enter your name")
+
+// function reversefun(str) {
+//     let rev = str.split("").reverse().join('')
+//     return rev
+// }
+ 
+// console.log(`user  ${user}`,reversefun(user));
