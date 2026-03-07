@@ -39,3 +39,40 @@
 
 // let num  = [1,54,8,6,4,6,8,2,]
 // console.log(Math.floor(Math.random(num)));
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+
+// function uniqueNumbers(num) {
+// let plus =  num.filter((el,ind) =>{
+//     if (ind === el) {
+//         console.log(el);
+//     }
+//  })
+
+//  return plus
+// }
+
+
+// let check = uniqueNumbers(arr);
+
+// console.log(check);
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+
+// function uniqueNumbers(num) {
+//   return num.filter(el => num.indexOf(el) !== num.lastIndexOf(el));
+// }
+
+// console.log(uniqueNumbers(arr));
+
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5,11,11,101,101];
+
+// function repeatedNumbers(num) {
+//   return num.filter((el, ind) => num.indexOf(el) !== ind);
+// }
+
+// console.log(repeatedNumbers(arr));
