@@ -76,3 +76,27 @@
 // }
 
 // console.log(repeatedNumbers(arr));
+
+
+let num = [,1,2,1,3,5,5,4,3,6,7,7]
+
+function repeatednumber(str) {
+    let result = str.filter((elm, index)=>{
+      return num.indexOf(elm) !== index
+    })
+return result
+}
+
+console.log(repeatednumber(num));
+
+
+const arr = [1,2,2,3,4,4,5];
+
+const count = arr.reduce((acc, val) => {
+  acc[val] = (acc[val] || 0) + 1;
+  return acc;
+}, {});
+
+const repeated = Object.keys(count).filter(key => count[key] > 1);
+
+console.log(Array(repeated));
