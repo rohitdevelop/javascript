@@ -219,7 +219,6 @@
 // }
 // console.log(sumevenodd(1, 5));
 
-
 // .............................count=⌊320−2​⌋+1=⌊318​⌋+1=6+1=7..........................
 // let count = 0
 // for (let i = 2; i <= 20; i += 3) {
@@ -228,50 +227,50 @@
 
 // console.log(count);
 
+// const arr = [4, 5, 7, 8, 9, 11, 5, 11];
+
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+
+// for (let num of arr) {
+//   if (num > largest) {
+//     secondLargest = largest;
+//     largest = num;
+//   }
+//   else if (num > secondLargest && num !== largest) {
+//     secondLargest = num;
+//   }
+// }
+
+// console.log(secondLargest);
+
+// const nums = [2,7,11,15]
+// const target = 9
+
+// const map = {}
+
+// for(let num of nums){
+//    let needed = target - num
+
+//    if(map[needed]){
+//       console.log(num + needed)
+//       break
+//    }
+
+//    map[num] = true
+// }
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 15, 10];
+// let reverseelement = num.reverse();
+// console.log(reverseelement);
+let reveseElemtnt = []
 
 
-
-
-
-function findSecondLargest(arr) {
-     let largest = Number.MIN_SAFE_INTEGER;
-    let secondLargest = Number.MIN_SAFE_INTEGER;
-
-    for (let i = 0; i < arr.length; i++) {
-        const currentNum = arr[i];
-
-        if (currentNum > largest) {
-             secondLargest = largest;
-            largest = currentNum;
-        } else if (currentNum > secondLargest && currentNum !== largest) {
-             secondLargest = currentNum;
-        }
-    }
-    
-     if (secondLargest === Number.MIN_SAFE_INTEGER) {
-        return "No distinct second largest number found";
-    }
-
-    return secondLargest;
+for (let i = num.length -1; i >= 0; i--) {
+  let digit = num[i];
+  // console.log(digit);
+ reveseElemtnt.push(digit);
 }
 
- const numbers = [12, 35, 1, 10, 34, 1, 35];
-console.log(findSecondLargest(numbers)); // Output: 34
 
-
-const arr = [4, 5, 7, 8, 9, 10, 5, 11];
-
-let largest = -Infinity;
-let secondLargest = -Infinity;
-
-for (let num of arr) {
-  if (num > largest) {
-    secondLargest = largest;
-    largest = num;
-  } 
-  else if (num > secondLargest && num !== largest) {
-    secondLargest = num;
-  }
-}
-
-console.log(secondLargest);
+console.log(reveseElemtnt);
