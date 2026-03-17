@@ -260,17 +260,17 @@
 //    map[num] = true
 // }
 
-let num = [1, 2, 3, 4, 5, 6, 7, 8, 15, 10];
-// let reverseelement = num.reverse();
-// console.log(reverseelement);
-let reveseElemtnt = []
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 15, 10];
+// // let reverseelement = num.reverse();
+// // console.log(reverseelement);
+// let reveseElemtnt = []
 
 
-for (let i = num.length -1; i >= 0; i--) {
-  let digit = num[i];
-  // console.log(digit);
- reveseElemtnt.push(digit);
-}
+// for (let i = num.length -1; i >= 0; i--) {
+//   let digit = num[i];
+//   // console.log(digit);
+//  reveseElemtnt.push(digit);
+// }
 
 
-console.log(reveseElemtnt);
+// console.log(reveseElemtnt);

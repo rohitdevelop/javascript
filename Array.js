@@ -10,36 +10,31 @@
 //     }
 // }
 
-// console.log("Second largest number:", secondLargest); 
- 
+// console.log("Second largest number:", secondLargest);
 
 // largest number
 // const number = [24,54,6,5,2,4,5,]
- 
+
 // let largest = Math.max(...number)
 // console.log(largest);
-
 
 // sum of all array
 // let num = [45,4,5,5,9,]
 // let sum = num.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 // console.log(sum);
 
-
-
 // for (let i = 1; i <= 10; i++) {
 //  if (i % 2 === 0) {
 //     console.log("erven" , i);
-    
+
 // } else {
 //     console.log("odd" , i);
-    
-//  }    
+
+//  }
 // }
 
 // let num  = [1,54,8,6,4,6,8,2,]
 // console.log(Math.floor(Math.random(num)));
-
 
 // const arr = [1, 2, 2, 3, 4, 4, 5];
 
@@ -53,11 +48,9 @@
 //  return plus
 // }
 
-
 // let check = uniqueNumbers(arr);
 
 // console.log(check);
-
 
 // const arr = [1, 2, 2, 3, 4, 4, 5];
 
@@ -67,8 +60,6 @@
 
 // console.log(uniqueNumbers(arr));
 
-
-
 // const arr = [1, 2, 2, 3, 4, 4, 5,11,11,101,101];
 
 // function repeatedNumbers(num) {
@@ -77,26 +68,51 @@
 
 // console.log(repeatedNumbers(arr));
 
+// let num = [,1,2,1,3,5,5,4,3,6,7,7]
 
-let num = [,1,2,1,3,5,5,4,3,6,7,7]
+// function repeatednumber(str) {
+//     let result = str.filter((elm, index)=>{
+//       return num.indexOf(elm) !== index
+//     })
+// return result
+// }
 
-function repeatednumber(str) {
-    let result = str.filter((elm, index)=>{
-      return num.indexOf(elm) !== index
-    })
-return result
-}
+// console.log(repeatednumber(num));
 
-console.log(repeatednumber(num));
+// const arr = [1,2,2,3,4,4,5];
+
+// const count = arr.reduce((acc, val) => {
+//   acc[val] = (acc[val] || 0) + 1;
+//   return acc;
+// }, {});
+
+// const repeated = Object.keys(count).filter(key => count[key] > 1);
+
+// console.log(Array(repeated));
+
+// let string = "javajscript";
+
+// function countstringcharacter(str) {
+//   let obj = {};
+//   for (let i = 0; i < str.length; i++) {
+//     let chr = str[i];
+//     if (obj[chr]) {
+//       obj[chr] = obj[chr] + 1;
+//     } else {
+//       obj[chr] = 1;
+//     }
+
+  
+//   }
 
 
-const arr = [1,2,2,3,4,4,5];
+//   for (let i = 0; i < str.length; i++) {
+//       if (obj[str[i]]===1) {
+//      return str[i]
+//     }
+    
+//   }
+//   return obj
+// }
 
-const count = arr.reduce((acc, val) => {
-  acc[val] = (acc[val] || 0) + 1;
-  return acc;
-}, {});
-
-const repeated = Object.keys(count).filter(key => count[key] > 1);
-
-console.log(Array(repeated));
+// console.log(countstringcharacter(string));

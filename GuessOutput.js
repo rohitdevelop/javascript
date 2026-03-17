@@ -180,8 +180,8 @@
 //  }))
 
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
-const result = arr.filter((num) => num % 2 === 0).map(num => num * 2 );
+// const result = arr.filter((num) => num % 2 === 0).map(num => num * 2 );
 
-console.log(result);
+// console.log(result);
