@@ -336,3 +336,20 @@
 
 // newFn(); 
 // Output: Brand: Samsung
+
+
+
+ class People {
+    constructor(name,age) {
+     this.name = name;
+     this.age= age;
+    }
+
+    greet() {
+       console.log( `hello ${this.name} and ${this.age}`);
+    };
+
+}
+
+const one = new People("rohit" , 45)
+console.log(one);
