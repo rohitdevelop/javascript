@@ -78,7 +78,7 @@ abc()
 
 // console.log(JSON.stringify(a)); // true
 
-// console.log(![]);
+console.log(![]);
 
 // if ( null) {
 //     console.log("present");
@@ -100,9 +100,9 @@ abc()
 
 
 
-// a=2;
+// a=3;
 // console.log(a);
-// var a = 2;
+// // var a = 2;
 
 // console.log( typeof(null));
 

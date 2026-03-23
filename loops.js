@@ -69,20 +69,37 @@
 //   console.log(result);
 // }
 
-let isbn = "4578546925";
-let sum = 0;
-let i = 0;
+// let isbn = "4578546925";
+// let sum = 0;
+// let i = 0;
 
-while (i < isbn.length) {
-  let digit = Number(isbn[i]);
-  sum += digit * (i + 1);
-  i++;
+// while (i < isbn.length) {
+//   let digit = Number(isbn[i]);
+//   sum += digit * (i + 1);
+//   i++;
+// }
+
+// console.log("Total Sum:", sum);
+
+// if (sum % 11 === 0) {
+//   console.log("✅ Valid ISBN");
+// } else {
+//   console.log("❌ Invalid ISBN");
+// }
+
+
+
+// function reverseString(str) {
+//   let reverse = ""
+
+//   for (let i = str.length - 1 ; i >= 0 ; i-- ) {
+//     reverse += str[i]; 
+//   }
+//   return reverse
+// }
+
+// console.log(reverseString("rohit"))
+  show = () => {
+  console.log(this);
 }
-
-console.log("Total Sum:", sum);
-
-if (sum % 11 === 0) {
-  console.log("✅ Valid ISBN");
-} else {
-  console.log("❌ Invalid ISBN");
-}
+show();

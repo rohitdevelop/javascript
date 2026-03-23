@@ -1,4 +1,4 @@
-// console.log([] + {});//  {object  object}
+console.log(typeof([] + []));//  {object  object}
 // console.log({} + []);//  {object object}
 // console.log([] + []);// {object}
 // console.log({} + {});//  {object}
@@ -52,7 +52,7 @@
 // let interview = 1 - - "2"
 // let interview = 1 - +"2"
 // let interview = 1 + +"2"
-// console.log(interview);
+console.log(interview);
 
 
 // console.log(0 == false);// true
