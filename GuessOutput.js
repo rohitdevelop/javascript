@@ -1,4 +1,4 @@
-console.log(typeof([] + []));//  {object  object}
+// console.log(typeof([] + []));//  {object  object}
 // console.log({} + []);//  {object object}
 // console.log([] + []);// {object}
 // console.log({} + {});//  {object}
@@ -34,6 +34,7 @@ console.log(typeof([] + []));//  {object  object}
 
 
 // test().then(res => console.log(res));//1
+// console.log(0.1 + 0.2 === 0.3); //false becuz js run floating points number
 
 
 // const a ={};
@@ -52,7 +53,7 @@ console.log(typeof([] + []));//  {object  object}
 // let interview = 1 - - "2"
 // let interview = 1 - +"2"
 // let interview = 1 + +"2"
-console.log(interview);
+// console.log(interview);
 
 
 // console.log(0 == false);// true
@@ -185,3 +186,43 @@ console.log(interview);
 // const result = arr.filter((num) => num % 2 === 0).map(num => num * 2 );
 
 // console.log(result);
+
+
+
+// const obj = {
+//     a: 1,
+//     b: 2
+// }
+
+// let name = '"rohit"'
+// console.log(name);
+
+// console.log(JSON.parse(name));
+
+
+// let a = {name: "rohit"}
+// let b = {name: "rohit" , hgf:545}
+  
+
+// const result = {...a , ...b};
+
+// console.log(result);
+
+let num = [1,2,3,4]
+
+//  const result = num.reduce((acc, val) => {
+//   console.log("acc:", acc);
+//   console.log("val:", val);
+
+//   return acc + val; // ✅ important
+// }, 0);
+
+// console.log(result); // 10
+ 
+
+function mapmethod() {
+    let result = num.map((val)=> val > 2)
+    return result
+}
+
+console.log(mapmethod());

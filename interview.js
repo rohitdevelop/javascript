@@ -201,3 +201,21 @@ console.log(![]);
 // 👉 React = Declarative
 // 👉 JavaScript DOM = Imperative
 // -------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------
+// "useEffect runs after the browser paints the UI, while useLayoutEffect runs synchronously before the paint. useLayoutEffect is useful for DOM measurements and preventing UI flickers, but it can block rendering so it should be used carefully."
+// -------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------
+// useMemo → value ko memoize karta hai
+// useCallback → function ko memoize karta hai
+// -------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------
+// Context API → simple state sharing (small apps ke liye)
+// Redux → complex global state management (large apps ke liye)
+
+// "Context API is suitable for simple global state sharing, but it can cause unnecessary re-renders in large applications. Redux provides a more scalable and predictable state management solution with better debugging and middleware support, making it ideal for complex applications."
+// -------------------------------------------------------------------------
