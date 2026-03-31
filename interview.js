@@ -53,6 +53,11 @@ abc()
 // 👉 Non-Primitive data types wo hote hain jo multiple values store kar sakte hain aur mutable hote hain.
 
 // array , object and functions
+
+
+// Type           |  	Behavior
+// Primitive	  |    Copy by value
+// Non-Primitive  |Copy by reference
 // 2️⃣ .........................................every()
 
 // 👉 Tests whether all elements pass a condition. Returns true or false.
@@ -170,4 +175,29 @@ console.log(![]);
 // }
 
 
+// -------------------------------------------------------------------------
+// what is the promises 
+// A Promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value.”
+// 🎯 Key Points
+// Handles asynchronous code
+// Avoids callback hell ❌
+// Cleaner code with async/await ✔️
+// -------------------------------------------------------------------------
 
+
+// -------------------------------------------------------------------------
+// what is the DOM
+// “The DOM (Document Object Model) is a tree-like structure of HTML elements that allows JavaScript to access and manipulate web page content dynamically.”
+// -------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------
+// 🎯 Interview Answer (Perfect)
+
+// “Imperative programming focuses on how to perform tasks step by step, while declarative programming focuses on what the desired outcome is without specifying the exact steps.”
+
+// 🔥 Pro Tip (Important)
+
+// 👉 React = Declarative
+// 👉 JavaScript DOM = Imperative
+// -------------------------------------------------------------------------

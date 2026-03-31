@@ -1,15 +1,16 @@
- p{
-   /* display: none;
-  visibility: hidden; */
-  border: 5px solid aqua;
- /* border-color: aqua; */
-width: 20%;
-height: 20%;
-outline: 5px solid black;
-text-decoration: underline;
-/* outline-color: black; */
-}
+ 
 body{
   background-color: black;
   color: white;
 }
+
+ 
+p{
+   width: 150px;
+  height: 200px;
+}
+
+/* primitive deta types */
+/* string , bolean , number , null, undifine, symbol,bighint */
+/* non-primitive deta types */
+/* string , function */
