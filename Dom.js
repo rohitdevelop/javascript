@@ -10,10 +10,8 @@
 //       })
 //       .join();
 
-
-
 //     para.innerText = str;
-  
+
 //     console.log(str);
 //   }, 10);
 
@@ -27,14 +25,13 @@
 //   }, 300);
 // });
 
-
 // let para = document.querySelector("p");
 // let character = "ABCDEFGHIJKLMNOPQRSTabcdefghijklmnopqrstuvwxyz";
 // let text = para.innerText;
 // let iteration = 0;
 
 //    function randomtext() {
-    
+
 //     let str = text
 //     .split("")
 //     .map((char, index) => {
@@ -44,18 +41,15 @@
 //       return character.split('')[Math.floor(Math.random() * 52)]; // Random letter
 //     })
 //     .join(""); // Fixed: removed the comma, should be empty string
-    
+
 //     para.innerText = str;
-    
-    
-//     iteration += 0.2; 
-    
+
+//     iteration += 0.2;
+
 //   }
 //   setInterval(randomtext,30)
- 
-// map return a array but in foreach does not return anything thats the diffrece 
- 
 
+// map return a array but in foreach does not return anything thats the diffrece
 
 //  class persone {
 //     constructor(){
@@ -65,15 +59,13 @@
 
 //     greet (){
 //         console.log(`my nmae is ${this.name} and i am ${this.age} old`);
-        
+
 //     }
 //  }
 
 //  let create = new persone()
 
 //  console.log(create.greet());
- 
-
 
 // let user = prompt("enter your name")
 
@@ -81,5 +73,23 @@
 //     let rev = str.split("").reverse().join('')
 //     return rev
 // }
- 
+
 // console.log(`user  ${user}`,reversefun(user));
+
+// function geet() {
+//     console.log("hello");
+
+//     return "hello";
+// }
+
+// let result = geet()
+// console.log(result);
+
+let arr = [1, 2, 3, 4, 5, 6, 10];
+let result = 0;
+
+for (let i = 0; i < arr.length; i++) {
+   result += arr[i];
+}
+
+console.log(result);
