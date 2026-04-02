@@ -85,11 +85,23 @@
 // let result = geet()
 // console.log(result);
 
-let arr = [1, 2, 3, 4, 5, 6, 10];
-let result = 0;
+// let arr = [1, 2, 3, 4, 5, 6, 10];
+// let result = 0;
 
-for (let i = 0; i < arr.length; i++) {
-   result += arr[i];
-}
+// for (let i = 0; i < arr.length; i++) {
+//    result += arr[i];
+// }
 
-console.log(result);
+
+// let num = ["a","b","c","12","d","e"];
+ 
+ 
+// for (let i = num.length; i >= 0; i--) {
+//     const element = num[i];
+//   element
+    
+// }
+         
+//   console.log(num);
+
+ 

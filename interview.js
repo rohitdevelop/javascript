@@ -219,3 +219,6 @@ console.log(![]);
 
 // "Context API is suitable for simple global state sharing, but it can cause unnecessary re-renders in large applications. Redux provides a more scalable and predictable state management solution with better debugging and middleware support, making it ideal for complex applications."
 // -------------------------------------------------------------------------
+
+
+// call by reference and cloning and debounsing and throutling prototype and polyfill

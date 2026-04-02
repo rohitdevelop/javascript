@@ -80,3 +80,145 @@ Example:
 
 let newFn = show.bind(obj);
 newFn(); // call later
+
+
+
+// ==========================================
+// call by reference and cloning and debounsing and throutling prototype and polyfill================================
+
+
+1. Call by Value vs Call by Reference
+✅ Call by Value (Primitive)
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
+
+👉 Copy banta hai → original change nahi hota
+
+✅ Call by Reference (Objects / Arrays)
+let obj1 = { name: "Rohit" };
+let obj2 = obj1;
+
+obj2.name = "Singh";
+
+console.log(obj1.name); // Singh 😱
+
+👉 Same reference → dono change ho jaate hain
+
+🧠 2. Cloning (Important 🔥)
+❌ Shallow Copy
+let obj1 = { name: "Rohit", address: { city: "Delhi" } };
+
+let obj2 = { ...obj1 };
+
+obj2.address.city = "Noida";
+
+console.log(obj1.address.city); // Noida ❌ problem
+✅ Deep Copy
+let obj1 = { name: "Rohit", address: { city: "Delhi" } };
+
+let obj2 = JSON.parse(JSON.stringify(obj1));
+
+obj2.address.city = "Noida";
+
+console.log(obj1.address.city); // Delhi ✅
+🧠 3. Debouncing
+
+👉 Function tab call hota hai jab user ruk jaye
+
+🔥 Example (Search Input)
+function debounce(fn, delay) {
+  let timer;
+
+  return function (...args) {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
+
+// usage
+const search = (text) => {
+  console.log("API Call:", text);
+};
+
+const debouncedSearch = debounce(search, 500);
+
+👉 Typing fast → API call nahi
+👉 Rukte hi → call
+
+🧠 4. Throttling
+
+👉 Fixed interval me hi call hota hai
+
+function throttle(fn, delay) {
+  let lastCall = 0;
+
+  return function (...args) {
+    let now = new Date().getTime();
+
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      fn.apply(this, args);
+    }
+  };
+}
+
+// usage
+const handleScroll = () => {
+  console.log("Scroll event");
+};
+
+const throttledScroll = throttle(handleScroll, 1000);
+
+👉 Har 1 sec me ek hi call
+
+🧠 5. Prototype
+
+👉 JS me inheritance ka base concept
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHello = function () {
+  console.log("Hello " + this.name);
+};
+
+const p1 = new Person("Rohit");
+p1.sayHello(); // Hello Rohit
+
+👉 Method memory me ek hi baar store hota hai 🔥
+
+🧠 6. Polyfill
+
+👉 Browser me missing feature ko manually implement karna
+
+🔥 Example: map() polyfill
+Array.prototype.myMap = function (callback) {
+  let result = [];
+
+  for (let i = 0; i < this.length; i++) {
+    result.push(callback(this[i], i, this));
+  }
+
+  return result;
+};
+
+// usage
+let arr = [1, 2, 3];
+
+let res = arr.myMap((num) => num * 2);
+
+console.log(res); // [2,4,6]
+🎯 Interview Tips
+Debounce → search input
+Throttle → scroll / resize
+Prototype → memory optimization
+Polyfill → deep JS knowledge
