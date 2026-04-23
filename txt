@@ -57,7 +57,14 @@ call() kisi function ko turant execute karta hai aur this ko manually set karta 
 Arguments comma-separated diye jate hain.
 
 Example:
+function introduce(hobby, city) {
+  console.log(`Hi, I am ${this.name}. I like ${hobby} and I live in ${city}.`);
+}
 
+const user = { name: "Rahul" };
+
+introduce.call(user, "Cricket", "Delhi"); 
+// Output: Hi, I am Rahul. I like Cricket and I live in Delhi.
 show.call(obj, a, b, c);
 
 
@@ -67,7 +74,14 @@ apply() bhi function ko turant execute karta hai aur this set karta hai,
 but arguments array ke form me deta hai.
 
 Example:
+function introduce(hobby, city) {
+  console.log(`Hi, I am ${this.name}. I like ${hobby} and I live in ${city}.`);
+}
 
+const user = { name: "Rahul" };
+
+ introduce.apply(user, ["Football", "Mumbai"]);
+ // Output: Hi, I am Rahul. I like Football and I live in Mumbai.
 show.apply(obj, [a, b, c]);
 
 
@@ -77,7 +91,15 @@ bind() function ko turant execute nahi karta,
 yeh ek new function return karta hai jisme this permanently set hota hai.
 
 Example:
+function introduce(hobby, city) {
+  console.log(`Hi, I am ${this.name}. I like ${hobby} and I live in ${city}.`);
+}
 
+const user = { name: "Rahul" };
+
+ const boundIntroduce = introduce.bind(user, "Gaming", "Bangalore");
+boundIntroduce();
+// Output: Hi, I am Rahul. I like Gaming and I live in Bangalore.
 let newFn = show.bind(obj);
 newFn(); // call later
 
