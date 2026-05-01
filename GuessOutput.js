@@ -212,13 +212,18 @@
 // console.log(v2);// 8x
 
 
-function Person(name) {
-  this.name = name;
+// "ROHIT" to "rohit"
+
+
+function lowercase(src) {
+  return src.toLowerCase()
 }
 
-Person.prototype.sayHello = function () {
-  console.log("Hello " + this.name);
-};
+console.log(lowercase("ROHIT"));
 
-const p1 = new Person("Rohit");
-p1.sayHello(); // Hello Rohit
+
+let latter = "rohit"
+
+let result  =  latter.toLowerCase()
+
+console.log(result);
