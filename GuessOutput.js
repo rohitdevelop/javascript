@@ -215,15 +215,29 @@
 // "ROHIT" to "rohit"
 
 
-function lowercase(src) {
-  return src.toLowerCase()
+// function lowercase(src) {
+//   return src.toLowerCase()
+// }
+
+// console.log(lowercase("ROHIT"));
+
+
+// let latter = "rohit"
+
+// let result  =  latter.toLowerCase()
+
+// console.log(result);
+
+
+let num = [1,2,3,4,5,6]
+
+function graternum(src) {
+  let singlenum = [];
+  for (let i = 0; i < src.length; i++) {
+        let num =+ src[i]
+         
+  }
+  return singlenum
 }
 
-console.log(lowercase("ROHIT"));
-
-
-let latter = "rohit"
-
-let result  =  latter.toLowerCase()
-
-console.log(result);
+console.log(graternum(num));
