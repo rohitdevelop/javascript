@@ -116,3 +116,23 @@
 // }
 
 // console.log(countstringcharacter(string));
+
+
+const numbers = [10, 5, 20, 8, 20, 15];
+
+let first = -Infinity;
+let second = -Infinity;
+
+for (let i = 0; i < numbers.length; i++) {
+  let num = numbers[i];
+
+  if (num > first) {
+    second = first;
+    first = num;
+  } else if (num > second && num !== first) {
+    second = num;
+  }
+}
+
+console.log("First Largest:", first);
+console.log("Second Largest:", second);
