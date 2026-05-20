@@ -118,21 +118,36 @@
 // console.log(countstringcharacter(string));
 
 
-const numbers = [10, 5, 20, 8, 20, 15];
+// const numbers = [10, 5, 20, 8, 20, 15];
 
-let first = -Infinity;
-let second = -Infinity;
+// let first = -Infinity;
+// let second = -Infinity;
 
-for (let i = 0; i < numbers.length; i++) {
-  let num = numbers[i];
+// for (let i = 0; i < numbers.length; i++) {
+//   let num = numbers[i];
 
-  if (num > first) {
-    second = first;
-    first = num;
-  } else if (num > second && num !== first) {
-    second = num;
-  }
+//   if (num > first) {
+//     second = first;
+//     first = num;
+//   } else if (num > second && num !== first) {
+//     second = num;
+//   }
+// }
+
+// console.log("First Largest:", first);
+// console.log("Second Largest:", second);
+
+
+let array = [1,2,3,4,45,63,12];
+
+function reversearray(arr) {
+  let reversed = [...arr].reverse();
+
+  let first = reversed[0];
+
+  let second = reversed.slice(1);
+
+  return [first, second];
 }
 
-console.log("First Largest:", first);
-console.log("Second Largest:", second);
+console.log(reversearray(array));
