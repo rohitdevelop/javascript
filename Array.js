@@ -138,16 +138,16 @@
 // console.log("Second Largest:", second);
 
 
-let array = [1,2,3,4,45,63,12];
+// let array = [1,2,3,4,45,63,12];
 
-function reversearray(arr) {
-  let reversed = [...arr].reverse();
+// function reversearray(arr) {
+//   let reversed = [...arr].reverse();
 
-  let first = reversed[0];
+//   let first = reversed[0];
 
-  let second = reversed.slice(1);
+//   let second = reversed.slice(1);
 
-  return [first, second];
-}
+//   return [first, second];
+// }
 
-console.log(reversearray(array));
+// console.log(reversearray(array));
