@@ -274,3 +274,26 @@
 
 
 // console.log(reveseElemtnt);
+
+// "Sort an array in ascending order using Selection Sort."
+
+function selectionSort(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {  // Fix loop condition
+        let min = i;
+
+        for (let j = i + 1; j < arr.length; j++) {  // Fix inner loop condition
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+
+        // Swap elements if min index changed
+        if (min !== i) {
+            [arr[min], arr[i]] = [arr[i], arr[min]];
+        }
+    }
+}
+
+let arr = [11,22,36,14,20];  // output: [11,14,20,22,36]
+selectionSort(arr);
+console.log(arr); 
