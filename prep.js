@@ -89,35 +89,56 @@
 
 // exmple 
 
-console.log("hello");
+// console.log("hello");
 
-setTimeout(() => {
-  console.log("kaise ho");
+// setTimeout(() => {
+//   console.log("kaise ho");
   
-}, 1000);
+// }, 1000);
 
-console.log("batoa?");
+// console.log("batoa?");
 
-// Promise
+// // Promise
  
 
-let fun = new Promise((res,rej)=>{
+// let fun = new Promise((res,rej)=>{
   
 
-  let num = 5
+//   let num = 5
 
-  if (num % 2 === 0) {
-    res()
-  } else {
-   rej()    
-  }
-})
+//   if (num % 2 === 0) {
+//     res()
+//   } else {
+//    rej()    
+//   }
+// })
 
 
-fun.then(()=>{
-console.log("very good");
+// fun.then(()=>{
+// console.log("very good");
 
-}).catch(()=>{
+// }).catch(()=>{
   
-  console.log("not very good");
+//   console.log("not very good");
+// })
+
+// The historical alternative is Callbacks. Modern JavaScript also uses async/await, but it's not a replacement—it's syntactic sugar over Promises. Under the hood, async/await still uses Promises.
+
+// So remember:
+
+// ✅ Callback → Older approach (alternative before Promises)
+// ✅ Promise → Better async handling
+// ✅ Async/Await → Cleaner way to write Promise-based code
+
+let numbers = [1,2,3,4,5,6,7,8,9,10]
+
+let plus = numbers.reduce((acc,crr)=>{
+  return acc + crr 
 })
+
+console.log(numbers);
+console.log(plus);
+
+
+Debounce: "Debouncing delays the execution of a function until a specified time has passed since the last event."
+Throttle: "Throttling limits the execution of a function so that it runs at most once during a specified time interval."
