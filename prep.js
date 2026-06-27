@@ -52,32 +52,72 @@
 
 
 
-let age = 21; // global
+// let age = 21; // global
 
-function scope() {
-  let nume = "rohit"; // fun scope
+// function scope() {
+//   let nume = "rohit"; // fun scope
 
-  function scope2(params) {
-    let address = "delhi"; // fun scope
+//   function scope2(params) {
+//     let address = "delhi"; // fun scope
     
-    console.log(address); // delhi
-    console.log(nume); //nume is not defined
-  console.log(age); //age is not defined
-  }
+//     console.log(address); // delhi
+//     console.log(nume); //nume is not defined
+//   console.log(age); //age is not defined
+//   }
 
-  console.log(nume);// rohit
-  console.log(address); //address is not defined
-  console.log(age); //age is not defined
+//   console.log(nume);// rohit
+//   console.log(address); //address is not defined
+//   console.log(age); //age is not defined
   
-}
+// }
 
 
-console.log(age); //21
+// console.log(age); //21
 
-scope()
+// scope()
 // console.log(address);  //address is not defined
 // console.log(nume); //nume is not defined
 
 
 
 // Scope{} ka matlab hai kisi variable ko code ke kis area se access kiya ja sakta hai. Agar variable kisi scope ke bahar hai, to usse access nahi kar sakte.
+
+
+// Event loop 
+
+// to perform asyncronas task that we called event loops
+
+// exmple 
+
+console.log("hello");
+
+setTimeout(() => {
+  console.log("kaise ho");
+  
+}, 1000);
+
+console.log("batoa?");
+
+// Promise
+ 
+
+let fun = new Promise((res,rej)=>{
+  
+
+  let num = 5
+
+  if (num % 2 === 0) {
+    res()
+  } else {
+   rej()    
+  }
+})
+
+
+fun.then(()=>{
+console.log("very good");
+
+}).catch(()=>{
+  
+  console.log("not very good");
+})
