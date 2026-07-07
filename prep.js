@@ -130,15 +130,15 @@
 // ✅ Promise → Better async handling
 // ✅ Async/Await → Cleaner way to write Promise-based code
 
-let numbers = [1,2,3,4,5,6,7,8,9,10]
+// let numbers = [1,2,3,4,5,6,7,8,9,10]
 
-let plus = numbers.reduce((acc,crr)=>{
-  return acc + crr 
-})
+// let plus = numbers.reduce((acc,crr)=>{
+//   return acc + crr 
+// })
 
-console.log(numbers);
-console.log(plus);
+// console.log(numbers);
+// console.log(plus);
 
 
-Debounce: "Debouncing delays the execution of a function until a specified time has passed since the last event."
-Throttle: "Throttling limits the execution of a function so that it runs at most once during a specified time interval."
+// Debounce: "Debouncing delays the execution of a function until a specified time has passed since the last event."
+// Throttle: "Throttling limits the execution of a function so that it runs at most once during a specified time interval."
