@@ -165,14 +165,14 @@
 // },2000)
 // )
  
- console.log("hello");
+//  console.log("hello");
  
 
- function revfun(src) {
-    let ulta = src.split("").reverse().join("")
+//  function revfun(src) {
+//     let ulta = src.split("").reverse().join("")
 
-    return ulta
- }
+//     return ulta
+//  }
 
- console.log(revfun("rohit"));
+//  console.log(revfun("rohit"));
  

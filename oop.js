@@ -339,17 +339,36 @@
 
 
 
- class People {
-    constructor(name,age) {
-     this.name = name;
-     this.age= age;
-    }
+//  class People {
+//     constructor(name,age) {
+//      this.name = name;
+//      this.age= age;
+//     }
 
-    greet() {
-       console.log( `hello ${this.name} and ${this.age}`);
-    };
+//     greet() {
+//        console.log( `hello ${this.name} and ${this.age}`);
+//     };
+
+// }
+
+// const one = new People("rohit" , 45)
+// console.log(one);
+
+
+
+
+
+class Car {
+   constructor(name, year){
+       this.name = name
+       this.year = year
+   }
+
+   greet(){
+      console.log(`the car name is ${this.name}and year is ${this.year}`);
+      
+   }
 
 }
-
-const one = new People("rohit" , 45)
-console.log(one);
+const details = new Car("creta" , '2005')
+console.log(details);
