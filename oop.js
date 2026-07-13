@@ -358,17 +358,17 @@
 
 
 
-class Car {
-   constructor(name, year){
-       this.name = name
-       this.year = year
-   }
+// class Car {
+//    constructor(name, year){
+//        this.name = name
+//        this.year = year
+//    }
 
-   greet(){
-      console.log(`the car name is ${this.name}and year is ${this.year}`);
+//    greet(){
+//       console.log(`the car name is ${this.name}and year is ${this.year}`);
       
-   }
+//    }
 
-}
-const details = new Car("creta" , '2005')
-console.log(details);
+// }
+// const details = new Car("creta" , '2005')
+// console.log(details);
