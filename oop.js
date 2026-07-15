@@ -372,3 +372,20 @@
 // }
 // const details = new Car("creta" , '2005')
 // console.log(details);
+
+
+
+// class Car {
+//     constructor(name){
+//         this.name = name
+//     }
+//     greet(){
+//         console.log(`hello my car is ${this.name}`);
+        
+//     }
+// }
+
+
+// let user = new Car("rohit car")
+
+// console.log(user);
