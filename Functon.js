@@ -319,3 +319,11 @@
 
  
  
+
+let fullname = "rohit"
+function namereverse(str) {
+    let name =  str.split("").reverse().join('')
+    return name
+}
+
+console.log(namereverse(fullname));
