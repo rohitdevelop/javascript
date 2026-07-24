@@ -333,7 +333,7 @@
 //  coounting()
 
 
-let text =  "heloo"
+// let text =  "heloo"
 // let i = 0;
 // let output = "";
 
@@ -359,4 +359,20 @@ let text =  "heloo"
 // console.log(singlenums);// 2 6 kaise aya
 
 
+
+for (let i = 1; i <= 10; i++) {
+    let row = "* "
+     for (let j = 1; j < i; j++) {
+       row += j
+
+     }
+     console.log(row);
+     
+}
+
+for (let i = 0; i < 5; i++) {
+ let str = "* "
+ console.log(str.repeat(i));
+     
+}
 
